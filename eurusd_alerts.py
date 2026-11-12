@@ -64,8 +64,6 @@ FEEDS = {
     "Fed speeches": ("https://www.federalreserve.gov/feeds/speeches.xml", 2, False),
     "BoJ": ("https://www.boj.or.jp/en/rss/whatsnew.xml", 2, False),
     "BLS": ("https://www.bls.gov/feed/bls_latest.rss", 2, False),
-    "Forex Factory": ("http://cdn.rss.forexfactory.net/news/breakingnews.xml", 2, True),
-    "Forex Factory all": ("http://cdn.rss.forexfactory.net/news/all.xml", 3, True),
     "FXStreet": ("https://www.fxstreet.com/rss/news", 3, True),
     "Investing.com": ("https://www.investing.com/rss/news_1.rss", 3, True),
     "investingLive": ("https://investinglive.com/feed/forex/", 3, True),
@@ -83,6 +81,9 @@ KEYWORDS = {
 }
 INVERTED = ("unemployment", "jobless", "claims")  # higher = weaker currency
 UA = {"User-Agent": "eurusd-alerts/1.0"}
+FEED_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                         "Chrome/124.0 Safari/537.36",
+           "Accept": "application/rss+xml, application/xml, text/xml, */*"}
 
 
 # ---------- plumbing ----------
@@ -140,6 +141,21 @@ def entries(root):
                     l = (c.text or "").strip() or c.get("href", "")
             out.append((t, l))
     return out
+
+
+def get_items(url):
+    """Download a feed -> [(title, link)]. Raises RuntimeError with a short, readable reason."""
+    r = requests.get(url, headers=FEED_UA, timeout=30)
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code}")
+    body = r.content.lstrip(b"\xef\xbb\xbf \t\r\n")
+    try:
+        items = entries(ET.fromstring(body))
+    except ET.ParseError:
+        items = None
+    if items is None or (not items and not re.search(rb"<(rss|feed|rdf)", body[:600], re.I)):
+        raise RuntimeError("not a valid feed (page starts with: " + re.sub(r"\s+", " ", r.text[:50]) + ")")
+    return items
 
 
 def quiet(n):
@@ -540,10 +556,12 @@ def headlines(st):
     for src, (url, min_score, need_rel) in FEEDS.items():
         first = src not in st["feeds_init"]  # don't flood alerts when a feed is new
         try:
-            items = entries(ET.fromstring(requests.get(url, headers=UA, timeout=30).content))
-        except (requests.RequestException, ET.ParseError) as e:
-            print(f"feed {src} failed: {type(e).__name__}")
+            items = get_items(url)
+        except (requests.RequestException, RuntimeError) as e:
+            print(f"feed {src} failed: {e if isinstance(e, RuntimeError) else type(e).__name__}")
             continue
+        if not items:
+            print(f"feed {src}: 0 items")
         for title, link in items:
             if not title or link in st["seen"]:
                 continue
@@ -616,15 +634,18 @@ def check():
         d = requests.get(FF_URL, headers=UA, timeout=30).json()
         ok(f"Forex Factory calendar: {len(d)} events, {sum(1 for e in d if e.get('forecast'))} with forecasts, "
            f"'actual' field present: {any('actual' in e for e in d)}")
+        evs = calendar()
+        ok(f"EUR/USD/JPY events this week: {len(evs)} ({sum(1 for e in evs if e['impact'] == 'High')} high impact)")
+        for e in sorted((e for e in evs if e["t"] > now()), key=lambda e: e["t"])[:6]:
+            print(f"       next: {e['t'].astimezone(TZ):%a %H:%M} {e['cur']} {e['title']} [{e['impact']}]")
     except Exception as e:
         bad("Forex Factory calendar: " + type(e).__name__)
     for src, (url, _, _) in FEEDS.items():
         try:
-            r = requests.get(url, headers=UA, timeout=30)
-            n = len(entries(ET.fromstring(r.content)))
-            (ok if n else bad)(f"{src}: HTTP {r.status_code}, {n} items")
+            n = len(get_items(url))
+            (ok if n else bad)(f"{src}: {n} items")
         except Exception as e:
-            bad(f"{src}: {type(e).__name__}")
+            bad(f"{src}: {e if isinstance(e, RuntimeError) else type(e).__name__}")
     if TD_KEY:
         for sym in ("EUR/USD", "USD/JPY"):
             try:
