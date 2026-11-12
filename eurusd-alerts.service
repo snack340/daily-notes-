@@ -1,0 +1,13 @@
+[Unit]
+Description=EUR/USD alert bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/eurusd-alerts
+EnvironmentFile=/opt/eurusd-alerts/.env
+ExecStart=/usr/bin/python3 eurusd_alerts.py --loop
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
