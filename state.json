@@ -138,7 +138,9 @@
   "https://investinglive.com/forex/us-10-year-yields-fall-near-5-level/",
   "https://www.federalreserve.gov/newsevents/speech/barr20261112a.htm",
   "https://www.investing.com/news/forex-news/is-dollar-finally-ready-to-break-out-bca-weighs-in-5022178",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
+  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+  "https://investinglive.com/forex/euro-falls-to-the-lowest-since-april-2025/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00"
@@ -176,7 +178,7 @@
  ],
  "last_heartbeat": "2026-11-12",
  "last_run": {
-  "shock": "2026-11-12T17:36:50.811486+00:00"
+  "shock": "2026-11-12T18:29:47.902242+00:00"
  },
  "sent_log": [
   [
@@ -212,7 +214,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-12T17:36:50.488103+00:00",
+  "at": "2026-11-12T18:29:47.902030+00:00",
   "raw": [
    {
     "title": "RBA Assist Gov Hunter Speaks",
@@ -1073,16 +1075,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10543,
-   "2026-11-12T17:35:00+00:00"
+   1.10524,
+   "2026-11-12T18:28:00+00:00"
   ],
   "USD/JPY": [
-   159.72034,
-   "2026-11-12T17:35:00+00:00"
+   159.77728,
+   "2026-11-12T18:28:00+00:00"
   ],
   "EUR/JPY": [
-   176.55965544619997,
-   "2026-11-12T17:35:00+00:00"
+   176.5922409472,
+   "2026-11-12T18:28:00+00:00"
   ]
  }
 }
