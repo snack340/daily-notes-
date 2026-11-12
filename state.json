@@ -137,7 +137,8 @@
   "https://investinglive.com/forex/the-evidence-mounts-that-the-us-dollar-is-leveraged-to-the-ai-trade/",
   "https://investinglive.com/forex/us-10-year-yields-fall-near-5-level/",
   "https://www.federalreserve.gov/newsevents/speech/barr20261112a.htm",
-  "https://www.investing.com/news/forex-news/is-dollar-finally-ready-to-break-out-bca-weighs-in-5022178"
+  "https://www.investing.com/news/forex-news/is-dollar-finally-ready-to-break-out-bca-weighs-in-5022178",
+  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
  ],
  "reminded": [],
  "alerted": [],
@@ -166,7 +167,7 @@
  ],
  "last_heartbeat": "2026-11-12",
  "last_run": {
-  "shock": "2026-11-12T15:38:45.004207+00:00"
+  "shock": "2026-11-12T16:42:16.362888+00:00"
  },
  "sent_log": [
   [
@@ -202,7 +203,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-12T15:38:45.004055+00:00",
+  "at": "2026-11-12T16:42:16.362662+00:00",
   "raw": [
    {
     "title": "RBA Assist Gov Hunter Speaks",
@@ -781,20 +782,20 @@
     "previous": ""
    },
    {
-    "title": "Mortgage Delinquencies",
-    "country": "USD",
-    "date": "2026-11-12T10:21:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "4.37%"
-   },
-   {
     "title": "CB Leading Index m/m",
     "country": "AUD",
     "date": "2026-11-12T10:30:00-05:00",
     "impact": "Low",
     "forecast": "",
     "previous": "-0.3%"
+   },
+   {
+    "title": "Mortgage Delinquencies",
+    "country": "USD",
+    "date": "2026-11-12T11:14:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "4.37%"
    },
    {
     "title": "FOMC Member Goolsbee Speaks",
@@ -1063,16 +1064,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10573,
-   "2026-11-12T15:37:00+00:00"
+   1.10569,
+   "2026-11-12T16:40:00+00:00"
   ],
   "USD/JPY": [
-   159.89672,
-   "2026-11-12T15:37:00+00:00"
+   160.00611,
+   "2026-11-12T16:40:00+00:00"
   ],
   "EUR/JPY": [
-   176.80260020560002,
-   "2026-11-12T15:37:00+00:00"
+   176.91715576590002,
+   "2026-11-12T16:40:00+00:00"
   ]
  }
 }
