@@ -140,20 +140,14 @@
   "https://www.investing.com/news/forex-news/is-dollar-finally-ready-to-break-out-bca-weighs-in-5022178",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
-  "https://investinglive.com/forex/euro-falls-to-the-lowest-since-april-2025/"
+  "https://investinglive.com/forex/euro-falls-to-the-lowest-since-april-2025/",
+  "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "USD 30-y Bond Auction",
-   "t": "2026-11-12T18:01:00+00:00",
-   "high": false,
-   "fc": "n/a"
-  }
- ],
+ "pending": [],
  "recent": [
   "BoJ: Sources of Changes in Current Account Balances (Projections for Nov.)",
   "BoJ: Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
@@ -166,7 +160,37 @@
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
   "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger"
  ],
- "history": {},
+ "history": {
+  "USD 30-y Bond Auction": [
+   {
+    "date": "2026-11-12 18:01",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -0.1,
+      "m30": 5.6,
+      "m60": 3.0,
+      "peak": 7.1,
+      "px": 1.10507
+     },
+     "USD/JPY": {
+      "m5": 3.6,
+      "m30": 2.0,
+      "m60": 6.8,
+      "peak": 6.8,
+      "px": 159.84911
+     },
+     "EUR/JPY": {
+      "m5": 3.8,
+      "m30": 11.2,
+      "m60": 12.3,
+      "peak": 12.9,
+      "px": 176.64446
+     }
+    },
+    "fc": "n/a"
+   }
+  ]
+ },
  "last_shock": {},
  "feeds_init": [
   "ECB",
@@ -178,7 +202,7 @@
  ],
  "last_heartbeat": "2026-11-12",
  "last_run": {
-  "shock": "2026-11-12T18:29:47.902242+00:00"
+  "shock": "2026-11-12T19:30:11.993266+00:00"
  },
  "sent_log": [
   [
@@ -214,7 +238,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-12T18:29:47.902030+00:00",
+  "at": "2026-11-12T19:30:11.678676+00:00",
   "raw": [
    {
     "title": "RBA Assist Gov Hunter Speaks",
@@ -825,14 +849,6 @@
     "previous": ""
    },
    {
-    "title": "Mortgage Delinquencies",
-    "country": "USD",
-    "date": "2026-11-12T12:59:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "4.37%"
-   },
-   {
     "title": "30-y Bond Auction",
     "country": "USD",
     "date": "2026-11-12T13:01:00-05:00",
@@ -1049,6 +1065,14 @@
     "previous": ""
    },
    {
+    "title": "Mortgage Delinquencies",
+    "country": "USD",
+    "date": "2026-11-13T12:59:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "4.37%"
+   },
+   {
     "title": "FOMC Member Jefferson Speaks",
     "country": "USD",
     "date": "2026-11-13T19:00:00-05:00",
@@ -1075,16 +1099,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10524,
-   "2026-11-12T18:28:00+00:00"
+   1.10536,
+   "2026-11-12T19:28:00+00:00"
   ],
   "USD/JPY": [
-   159.77728,
-   "2026-11-12T18:28:00+00:00"
+   159.8674,
+   "2026-11-12T19:28:00+00:00"
   ],
   "EUR/JPY": [
-   176.5922409472,
-   "2026-11-12T18:28:00+00:00"
+   176.711029264,
+   "2026-11-12T19:28:00+00:00"
   ]
  }
 }
