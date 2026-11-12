@@ -653,6 +653,11 @@ def check():
                    + ("" if market_open() else " (market closed, age is expected)"))
             except Exception as e:
                 bad(f"{sym}: {scrub(e)[:120]}")
+        try:
+            t, v = pair_series(size=5)["EUR/JPY"][-1]
+            ok(f"EUR/JPY (calculated from the two above): {v:.3f} at {t:%H:%M} UTC, {(now() - t).total_seconds() / 60:.0f} min old")
+        except Exception as e:
+            bad("EUR/JPY: " + scrub(e)[:120])
     if FH_KEY:
         try:
             resp = requests.get("https://finnhub.io/api/v1/calendar/economic", params={"token": FH_KEY}, timeout=30).json()
