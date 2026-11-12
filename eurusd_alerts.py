@@ -63,8 +63,6 @@ FEEDS = {
     "Fed": ("https://www.federalreserve.gov/feeds/press_all.xml", 2, False),
     "Fed speeches": ("https://www.federalreserve.gov/feeds/speeches.xml", 2, False),
     "BoJ": ("https://www.boj.or.jp/en/rss/whatsnew.xml", 2, False),
-    "BLS": ("https://www.bls.gov/feed/bls_latest.rss", 2, False),
-    "FXStreet": ("https://www.fxstreet.com/rss/news", 3, True),
     "Investing.com": ("https://www.investing.com/rss/news_1.rss", 3, True),
     "investingLive": ("https://investinglive.com/feed/forex/", 3, True),
 }
