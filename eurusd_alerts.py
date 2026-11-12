@@ -428,7 +428,7 @@ def events(st):
     for e in calendar(st):
         fill_actual(st, f'{e["cur"]} {e["title"]}', e)
         mins = (e["t"] - n).total_seconds() / 60
-        window = 60 if e["impact"] == "High" else 15
+        window = 60 if e["impact"] == "High" else 30
         if 0 < mins <= window and e["id"] not in st["reminded"]:
             icon = "🔴" if e["impact"] == "High" else "🟠"
             name = f'{e["cur"]} {e["title"]}'
