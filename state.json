@@ -194,7 +194,8 @@
   "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2609.pdf",
   "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2609.pdf",
   "https://www.investing.com/news/forex-news/japanese-yen-tests-160-again-drawing-intervention-threats-5023989",
-  "https://www.investing.com/news/forex-news/asia-fx-yen-intervention-in-focus-as-rate-hike-bets-put-dollar-near-19mth-high-5024024"
+  "https://www.investing.com/news/forex-news/asia-fx-yen-intervention-in-focus-as-rate-hike-bets-put-dollar-near-19mth-high-5024024",
+  "https://investinglive.com/forex/japan-prime-minister-takaichi-fires-another-verbal-warning-as-usd-jpy-flirts-with-the-160-level/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00"
@@ -255,7 +256,7 @@
  ],
  "last_heartbeat": "2026-11-13",
  "last_run": {
-  "shock": "2026-11-13T06:00:19.863891+00:00"
+  "shock": "2026-11-13T06:05:19.517588+00:00"
  },
  "sent_log": [
   [
@@ -1154,16 +1155,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10584,
-   "2026-11-13T05:58:00+00:00"
+   1.10609,
+   "2026-11-13T06:03:00+00:00"
   ],
   "USD/JPY": [
-   159.96634,
-   "2026-11-13T05:58:00+00:00"
+   159.95465,
+   "2026-11-13T06:03:00+00:00"
   ],
   "EUR/JPY": [
-   176.8971774256,
-   "2026-11-13T05:58:00+00:00"
+   176.9242388185,
+   "2026-11-13T06:03:00+00:00"
   ]
  }
 }
