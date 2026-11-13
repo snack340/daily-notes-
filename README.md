@@ -4,7 +4,7 @@ Free, read-only bot. It runs on GitHub's servers (your laptop can be off) and se
 login and cannot trade.
 
 ## What it sends
-- Reminders before high-impact (60 min, plus a 10-min heads-up) and medium-impact (15 min) EUR, USD and JPY releases,
+- Reminders before high-impact (60 min, plus a 10-min heads-up) and medium-impact (30 min) EUR, USD and JPY releases,
   including US Treasury auctions. Each shows forecast, previous, what a beat usually does, current prices and past reactions.
 - A quick "+5 min" reaction and a full 60-minute result after high-impact releases (pips, direction, price).
 - Sudden-move alerts for EUR/USD, USD/JPY and EUR/JPY (labelled with the release that probably caused them).
@@ -86,3 +86,18 @@ News sources are the FEEDS list at the top of eurusd_alerts.py: `"Name": ("https
   error messages before printing or sending them.
 - Revoke a leaked token: Telegram @BotFather > /revoke; regenerate the data keys on their sites.
 - You get a daily message; if it stops arriving, something broke.
+
+## Telegram commands
+Send these to the bot from your own chat. Messages from anyone else are ignored. The bot reads them on its next run, so allow up to 5 minutes.
+- `/pause` stops alerts for 2 hours. `/pause 6` stops them for 6 hours (max 72). Alerts during a pause are skipped, not saved up.
+- `/resume` turns alerts back on.
+- `/status` shows whether it is running or paused, the next high-impact event, how many alerts went out in the last hour and the latest prices.
+
+## Other behaviour added in November 2026
+- Releases that share a time arrive as one reminder, one heads-up, one +5 min and one result message.
+- Yen intervention watch: a warning if USD/JPY falls 100 pips or more from its 30-minute high with no high-impact release within 45 minutes. Change the size with `YEN_WATCH_PIPS`.
+- The Sunday "Running" message lists the week's high-impact events.
+- The daily "Running" message adds the latest US 2-year and 10-year Treasury yields (daily closes from treasury.gov). If that site is unreachable the line is left out.
+- Headlines older than 12 hours are logged but not sent (`HEADLINE_MAX_AGE_H`).
+- The timer is a free Cloudflare Worker (alert-timer) that starts the workflow every 5 minutes, because GitHub's own schedule skips runs.
+- BLS and FXStreet were removed because they block GitHub's servers.
