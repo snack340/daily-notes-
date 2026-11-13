@@ -9,10 +9,15 @@ continuously with `--loop` on a small server. Sends alerts to Telegram.
   python eurusd_alerts.py backfill f.csv  # build history from past releases
   python eurusd_alerts.py check           # test every source, key and Telegram (prints OK/FAIL)
   python eurusd_alerts.py demo            # send a sample alert to Telegram
+
+Telegram commands (from your own chat only, picked up on the next run, so allow up to 5 min):
+  /pause [hours]   stop alerts (default 2 hours, max 72)      /resume   turn them back on
+  /status          what the bot is doing right now            /help     list the commands
 """
 import csv, json, os, re, statistics, sys, time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 
 import requests
 try:
@@ -33,6 +38,10 @@ STATE_FILE = os.getenv("STATE_FILE", "state.json")
 MAX_NORMAL_PER_HOUR = int(os.getenv("MAX_NORMAL_PER_HOUR", "5"))
 MAX_CRITICAL_PER_HOUR = int(os.getenv("MAX_CRITICAL_PER_HOUR", "15"))
 QUIET_HOURS_UTC = os.getenv("QUIET_HOURS_UTC", "")
+YEN_WATCH_PIPS = float(os.getenv("YEN_WATCH_PIPS", "100"))   # USD/JPY drop in 30 min that flags possible intervention
+HEADLINE_MAX_AGE_H = float(os.getenv("HEADLINE_MAX_AGE_H", "12"))  # older headlines are logged, not sent
+YIELD_URL = ("https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml"
+             "?data=daily_treasury_yield_curve&field_tdr_date_value=")  # + year; daily, free, no key
 CUR = {"st": None}
 try:  # show event times in your own time zone, e.g. TIMEZONE=Asia/Amman (default UTC)
     TZ = ZoneInfo(os.getenv("TIMEZONE") or "UTC")
@@ -73,7 +82,8 @@ RELEVANT = ("eur/usd", "eurusd", "usd/jpy", "usdjpy", "eur/jpy", "eurjpy", "euro
 KEYWORDS = {
     3: ("rate decision", "interest rate", "emergency", "monetary policy", "fomc statement",
         "balance sheet", "intervention", "unexpected", "surprise", "shock", "plunge", "surge",
-        "tumble", "soar", "breaking", "flash", "refunding", "debt ceiling", "yield curve control"),
+        "tumble", "soar", "breaking", "flash", "refunding", "debt ceiling", "yield curve control",
+        "rate check"),
     2: ("inflation", "press conference", "projections", "minutes", "employment", "gdp", "speech",
         "lagarde", "powell", "ueda", "bessent", "payroll", "cpi", "auction", "yield", "jgb"),
 }
@@ -97,7 +107,8 @@ def load():
         st = {}
     for k, v in (("seen", []), ("reminded", []), ("alerted", []), ("pending", []),
                  ("recent", []), ("history", {}), ("last_shock", {}), ("feeds_init", []),
-                 ("last_heartbeat", ""), ("last_run", {}), ("sent_log", []), ("titles", []), ("held", 0), ("cal", None), ("fails", {}), ("px", {})):
+                 ("last_heartbeat", ""), ("last_run", {}), ("sent_log", []), ("titles", []), ("held", 0), ("cal", None), ("fails", {}), ("px", {}),
+                 ("tg_offset", 0), ("paused_until", ""), ("last_yen", "")):
         st.setdefault(k, v)
     if not isinstance(st["last_shock"], dict):
         st["last_shock"] = {}
@@ -125,24 +136,45 @@ def has(text, words):
     return any(re.search(r"(?<![a-z0-9])" + re.escape(w) + r"(?![a-z0-9])", text) for w in words)
 
 
+def when(x):
+    """Feed date text -> UTC datetime, or None. A date with no time gets the benefit of the doubt (end of day)."""
+    x = (x or "").strip()
+    if not x:
+        return None
+    try:
+        d = parsedate_to_datetime(x)
+    except (TypeError, ValueError):
+        try:
+            d = datetime.fromisoformat(x.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    if d.tzinfo is None:
+        d = d.replace(tzinfo=timezone.utc)
+    if (d.hour, d.minute, d.second) == (0, 0, 0):
+        d += timedelta(hours=24)
+    return d.astimezone(timezone.utc)
+
+
 def entries(root):
-    """(title, link) pairs from RSS 2.0, RSS 1.0/RDF or Atom feeds."""
+    """(title, link, published) from RSS 2.0, RSS 1.0/RDF or Atom feeds."""
     out = []
     for el in root.iter():
         if el.tag.rsplit("}", 1)[-1] in ("item", "entry"):
-            t = l = ""
+            t = l = d = ""
             for c in el:
                 nm = c.tag.rsplit("}", 1)[-1]
                 if nm == "title" and not t:
                     t = (c.text or "").strip()
                 elif nm == "link" and not l:
                     l = (c.text or "").strip() or c.get("href", "")
-            out.append((t, l))
+                elif nm in ("pubDate", "published", "updated", "date") and not d:
+                    d = (c.text or "").strip()
+            out.append((t, l, when(d)))
     return out
 
 
 def get_items(url):
-    """Download a feed -> [(title, link)]. Raises RuntimeError with a short, readable reason."""
+    """Download a feed -> [(title, link, published)]. Raises RuntimeError with a short, readable reason."""
     r = requests.get(url, headers=FEED_UA, timeout=30)
     if r.status_code != 200:
         raise RuntimeError(f"HTTP {r.status_code}")
@@ -168,6 +200,10 @@ def send(text, prio="critical"):
     st = CUR["st"]
     if st is not None:
         n = now()
+        if paused(st):
+            st["held"] += 1
+            print("paused, skipped:", text[:70])
+            return
         st["sent_log"] = [x for x in st["sent_log"] if n - datetime.fromisoformat(x[0]) < timedelta(hours=1)]
         used = sum(1 for _, p in st["sent_log"] if p == prio)
         cap = MAX_NORMAL_PER_HOUR if prio == "normal" else MAX_CRITICAL_PER_HOUR
@@ -177,6 +213,11 @@ def send(text, prio="critical"):
             return
         st["sent_log"].append([n.isoformat(), prio])
     print(text, "\n")
+    tg(text)
+
+
+def tg(text):
+    """Deliver one message to your Telegram chat (no caps: send() applies those)."""
     if not (TG_TOKEN and TG_CHAT):
         return
     for attempt in (1, 2):
@@ -190,6 +231,66 @@ def send(text, prio="critical"):
         except requests.RequestException as e:
             print("telegram error:", type(e).__name__)
         time.sleep(2)
+
+
+def paused(st):
+    return bool(st.get("paused_until")) and now() < datetime.fromisoformat(st["paused_until"])
+
+
+def status_text(st):
+    n = now()
+    lines = [f'⏸ Paused until {st["paused_until"] and datetime.fromisoformat(st["paused_until"]).astimezone(TZ).strftime("%a %H:%M")}'
+             if paused(st) else "✅ Running, alerts on"]
+    try:
+        nxt = sorted((e for e in calendar(st) if e["impact"] == "High" and e["t"] > n), key=lambda e: e["t"])
+        lines.append(f'Next high impact: {nxt[0]["t"].astimezone(TZ):%a %H:%M} {nxt[0]["cur"]} {nxt[0]["title"]}'
+                     if nxt else "Next high impact: none left this week")
+    except Exception:
+        lines.append("Calendar: unreachable right now")
+    sent = sum(1 for x in st["sent_log"] if n - datetime.fromisoformat(x[0]) < timedelta(hours=1))
+    lines.append(f'Alerts in the last hour: {sent} · held back or skipped today: {st["held"]}')
+    lines.append(now_line(st, list(PAIRS)) or ("Prices: market closed" if not market_open(n) else "Prices: no fresh reading yet"))
+    bad = [f"{k} x{v}" for k, v in st["fails"].items() if v]
+    if bad:
+        lines.append("Problems: " + ", ".join(bad))
+    return "\n".join(lines)
+
+
+def commands(st):
+    """Telegram commands, accepted from YOUR chat only: /pause [hours], /resume, /status, /help."""
+    if not (TG_TOKEN and TG_CHAT):
+        return
+    r = requests.get(f"https://api.telegram.org/bot{TG_TOKEN}/getUpdates",
+                     params={"offset": st["tg_offset"], "timeout": 0, "allowed_updates": '["message"]'},
+                     timeout=20).json()
+    if not r.get("ok"):
+        raise RuntimeError("Telegram getUpdates: " + str(r.get("description"))[:100])
+    for u in r["result"]:
+        st["tg_offset"] = u["update_id"] + 1
+        m = u.get("message") or {}
+        if str((m.get("chat") or {}).get("id")) != str(TG_CHAT):
+            continue  # someone else messaged the bot: ignore
+        if now().timestamp() - m.get("date", 0) > 1800:
+            continue  # too old to act on
+        words = (m.get("text") or "").strip().lower().split()
+        cmd = words[0].split("@")[0] if words else ""
+        if cmd == "/pause":
+            try:
+                hours = min(max(float(words[1]), 0.25), 72)
+            except (IndexError, ValueError):
+                hours = 2
+            until = now() + timedelta(hours=hours)
+            st["paused_until"] = until.isoformat()
+            tg(f'⏸ Paused until {until.astimezone(TZ):%a %H:%M}. Alerts in that time are skipped, not saved up. '
+               f'Send /resume to turn them back on.')
+        elif cmd == "/resume":
+            st["paused_until"] = ""
+            tg("▶️ Alerts are back on.")
+        elif cmd == "/status":
+            tg(status_text(st))
+        elif cmd.startswith("/"):
+            tg("Commands:\n/pause [hours] - stop alerts (default 2h)\n/resume - turn alerts back on\n"
+               "/status - what the bot is doing\nCommands take up to 5 minutes to register.")
 
 
 def is_dup(st, title):
@@ -404,6 +505,7 @@ def calendar(st=None):
             if not isinstance(data, list):
                 raise ValueError("unexpected calendar response")
             if st is not None:
+                data = [e for e in data if e.get("country") in CURRENCIES]
                 st["cal"] = {"at": now().isoformat(), "raw": data}
         except (requests.RequestException, ValueError):
             if not cached:
@@ -564,7 +666,7 @@ def shock(st):
     if not TD_KEY or not market_open() or not due(st, "shock", PRICE_CHECK_MIN):
         return
     S = pair_series(size=90)
-    hits, moved = [], []
+    hits, moved, yen = [], [], 0
     for pair, s in S.items():
         k, min_pips = PAIRS[pair]
         c = [x for _, x in s]
@@ -574,6 +676,10 @@ def shock(st):
         mv = (c[-1] - c[-6]) * k
         h1 = (c[-1] - c[-61]) * k if len(c) >= 61 else 0
         st["px"][pair] = [c[-1], s[-1][0].isoformat()]
+        if pair == "USD/JPY":
+            ly = st.get("last_yen")
+            if not ly or now() - datetime.fromisoformat(ly) > timedelta(hours=6):
+                yen = (max(c[-31:]) - c[-1]) * k  # fall from the 30-minute high
         last = st["last_shock"].get(pair)
         cooled = not last or now() - datetime.fromisoformat(last) > timedelta(minutes=30)
         if abs(mv) >= min_pips and abs(mv) >= SHOCK_SIGMA * sd and cooled:
@@ -581,6 +687,15 @@ def shock(st):
             moved.append(pair)
             hits.append(f"{pair} {abs(mv):.0f} pips {side(mv)} in 5 min ({abs(mv) / sd:.1f}x normal, "
                         f"1h {pf(h1)}) → {px_fmt(pair, c[-1])}")
+    if yen >= YEN_WATCH_PIPS:
+        try:  # a big fall right after scheduled data is a normal reaction, not intervention
+            near = [e for e in calendar(st) if e["impact"] == "High" and abs((now() - e["t"]).total_seconds()) <= 2700]
+        except Exception:
+            near = []
+        if not near:
+            st["last_yen"] = now().isoformat()
+            hits.append(f"🇯🇵 USD/JPY fell {yen:.0f} pips from its 30-min high with no scheduled release → "
+                        f'{px_fmt("USD/JPY", S["USD/JPY"][-1][1])}. Possible yen intervention (unconfirmed)')
     if not hits:
         return
     lines = ["🚨 " + hits[0]] + hits[1:]
@@ -606,10 +721,12 @@ def headlines(st):
             continue
         if not items:
             print(f"feed {src}: 0 items")
-        for title, link in items:
-            if not title or link in st["seen"]:
+        for title, link, pub in items:
+            key = link or f"{src}|{title}"
+            if not title or key in st["seen"]:
                 continue
-            st["seen"].append(link)
+            st["seen"].append(key)
+            old = bool(pub) and now() - pub > timedelta(hours=HEADLINE_MAX_AGE_H)
             low = title.lower()
             if need_rel and not has(low, RELEVANT):
                 continue
@@ -617,7 +734,7 @@ def headlines(st):
             if score >= min_score and not is_dup(st, title):
                 st["titles"] = (st["titles"] + [" ".join(re.findall(r"[a-z0-9]+", low))])[-80:]
                 st["recent"] = (st["recent"] + [f"{src}: {title}"])[-10:]
-                if not first:
+                if not first and not old:
                     ap = affected(low)
                     send(f'{"🔴" if score == 3 else "🟠"} {src}: {title}\n'
                          + (f'Affects: {", ".join(ap)}\n' if ap else "") + link,
@@ -633,11 +750,48 @@ def heartbeat(st):
     if n.hour < 6 or st["last_heartbeat"] == today:
         return
     st["last_heartbeat"] = today
-    nxt = [e for e in calendar(st) if e["impact"] == "High" and n < e["t"] <= n + timedelta(hours=24)]
-    lines = "\n".join(f'{hm(e["t"])} {e["cur"]} {e["title"]} (fcst {e["fc"]})' for e in nxt[:6]) or "none"
+    cal = sorted((e for e in calendar(st) if e["impact"] == "High" and e["t"] > n), key=lambda e: e["t"])
+    week = cal if n.weekday() == 6 else []  # Sunday: the whole week ahead in the same message
+    if week:
+        head = "Week ahead, high impact"
+        lines = "\n".join(f'{e["t"].astimezone(TZ):%a %H:%M} {e["cur"]} {e["title"]} (fcst {e["fc"]})' for e in week[:14])
+        lines += f"\n+{len(week) - 14} more" if len(week) > 14 else ""
+    else:
+        head = "High impact next 24h"
+        nxt = [e for e in cal if e["t"] <= n + timedelta(hours=24)]
+        lines = "\n".join(f'{hm(e["t"])} {e["cur"]} {e["title"]} (fcst {e["fc"]})' for e in nxt[:6]) or "none"
     held, st["held"] = st["held"], 0
     extra = f" ({held} minor alerts held back)" if held else ""
-    send(f"✅ Running{extra}. High impact next 24h ({os.getenv('TIMEZONE') or 'UTC'}):\n{lines}")
+    y = yields()
+    send(f"✅ Running{extra}. {head} ({os.getenv('TIMEZONE') or 'UTC'}):\n{lines}" + (f"\n{y}" if y else ""))
+
+
+def yields(strict=False):
+    """Latest US 2y/10y Treasury yields from treasury.gov (daily closes). '' if unavailable."""
+    try:
+        r = requests.get(YIELD_URL + str(now().year), headers=FEED_UA, timeout=30)
+        if r.status_code != 200:
+            raise RuntimeError(f"HTTP {r.status_code}")
+        rows = []
+        for el in ET.fromstring(r.content).iter():
+            if el.tag.rsplit("}", 1)[-1] == "properties":
+                d = {c.tag.rsplit("}", 1)[-1]: (c.text or "") for c in el}
+                if d.get("NEW_DATE") and num(d.get("BC_2YEAR")) is not None and num(d.get("BC_10YEAR")) is not None:
+                    rows.append((d["NEW_DATE"][:10], num(d["BC_2YEAR"]), num(d["BC_10YEAR"])))
+        rows.sort()
+        if not rows:
+            raise RuntimeError("no yield rows found")
+        day, y2, y10 = rows[-1]
+        if now() - datetime.strptime(day, "%Y-%m-%d").replace(tzinfo=timezone.utc) > timedelta(days=7):
+            raise RuntimeError("yield data is stale: " + day)
+        chg = (f" ({(y2 - rows[-2][1]) * 100:+.0f}bp)", f" ({(y10 - rows[-2][2]) * 100:+.0f}bp)") if len(rows) > 1 else ("", "")
+        return (f"US yields {datetime.strptime(day, '%Y-%m-%d'):%a %d %b}: 2y {y2:.2f}%{chg[0]} · 10y {y10:.2f}%{chg[1]}"
+                f" · 10y-2y {(y10 - y2) * 100:+.0f}bp")
+    except Exception as e:
+        if strict:
+            raise
+        print("yields unavailable:", e if isinstance(e, RuntimeError) else type(e).__name__)
+        return ""
 
 
 # ---------- historical backfill from a CSV of past releases ----------
@@ -711,7 +865,17 @@ def check():
                 "Finnhub economic calendar: " + ("accessible" if "economicCalendar" in resp else scrub(resp)[:100]))
         except Exception as e:
             bad("Finnhub: " + type(e).__name__)
+    try:
+        ok("Treasury yields: " + yields(strict=True))
+    except Exception as e:
+        bad(f"Treasury yields: {e if isinstance(e, RuntimeError) else type(e).__name__} (daily message will just leave them out)")
     if TG_TOKEN and TG_CHAT:
+        try:
+            g = requests.get(f"https://api.telegram.org/bot{TG_TOKEN}/getUpdates", params={"limit": 1, "timeout": 0}, timeout=20).json()
+            (ok if g.get("ok") else bad)("Telegram commands (/pause /resume /status): "
+                                         + ("reachable" if g.get("ok") else str(g.get("description"))[:80]))
+        except Exception as e:
+            bad("Telegram commands: " + type(e).__name__)
         try:
             r = requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
                               json={"chat_id": TG_CHAT, "text": "✅ Test message from your bot"}, timeout=20)
@@ -738,7 +902,7 @@ def demo():
 def run_once():
     st = load()
     CUR["st"] = st
-    for step in (events, surprises, shock, headlines, heartbeat):
+    for step in (commands, events, surprises, shock, headlines, heartbeat):
         name = step.__name__
         try:
             step(st)
