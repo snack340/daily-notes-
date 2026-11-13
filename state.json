@@ -200,7 +200,8 @@
   "https://www.investing.com/news/forex-news/euro-yields-hit-multiweek-highs-as-hawkish-fed-shatters-global-bond-rally-5024281",
   "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-hawkish-fed-keeps-dollar-bid-5024553",
   "https://www.investing.com/news/forex-news/canadian-dollar-holds-near-onemonth-low-as-us-producer-inflation-keeps-fed-bets-5025909",
-  "https://www.investing.com/news/forex-news/chile-peso-hits-19month-low-as-copper-drops-us-rate-outlook-weighs-93CH-5026374"
+  "https://www.investing.com/news/forex-news/chile-peso-hits-19month-low-as-copper-drops-us-rate-outlook-weighs-93CH-5026374",
+  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -326,7 +327,7 @@
  ],
  "last_heartbeat": "2026-11-13",
  "last_run": {
-  "shock": "2026-11-13T21:15:18.167899+00:00"
+  "shock": "2026-11-13T21:20:18.740367+00:00"
  },
  "sent_log": [
   [
@@ -914,16 +915,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10231,
-   "2026-11-13T21:13:00+00:00"
+   1.10246,
+   "2026-11-13T21:18:00+00:00"
   ],
   "USD/JPY": [
-   159.76505,
-   "2026-11-13T21:13:00+00:00"
+   159.77291,
+   "2026-11-13T21:18:00+00:00"
   ],
   "EUR/JPY": [
-   176.11061226549998,
-   "2026-11-13T21:13:00+00:00"
+   176.1432423586,
+   "2026-11-13T21:18:00+00:00"
   ]
  },
  "tg_offset": 585038439,
