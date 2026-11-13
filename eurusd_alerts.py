@@ -423,57 +423,103 @@ def calendar(st=None):
     return out
 
 
+def joined(names, limit=3):
+    """'USD Core PPI m/m + PPI m/m' : one label for releases that come out together."""
+    out = [names[0]]
+    for x in names[1:limit]:
+        cur, _, rest = x.partition(" ")
+        out.append(rest if rest and cur == names[0].split()[0] else x)
+    return " + ".join(out) + (f" +{len(names) - limit} more" if len(names) > limit else "")
+
+
 def events(st):
     n = now()
+    slots = {}  # releases that share a time go out as ONE message, not one each
     for e in calendar(st):
-        fill_actual(st, f'{e["cur"]} {e["title"]}', e)
-        mins = (e["t"] - n).total_seconds() / 60
-        window = 60 if e["impact"] == "High" else 30
-        if 0 < mins <= window and e["id"] not in st["reminded"]:
-            icon = "🔴" if e["impact"] == "High" else "🟠"
-            name = f'{e["cur"]} {e["title"]}'
-            parts = [f'{icon} {name} · {hm(e["t"])} (in {mins:.0f} min)',
-                     f'Fcst {e["fc"]} · Prev {e["prev"]}',
-                     beat_line(name, e["fc"]), now_line(st, relevant(name)), hist_line(st, name)]
-            send("\n".join(x for x in parts if x), "critical" if e["impact"] == "High" else "normal")
-            st["reminded"].append(e["id"])
-            if mins <= 10:
+        e["name"] = f'{e["cur"]} {e["title"]}'
+        fill_actual(st, e["name"], e)
+        slots.setdefault(e["t"], []).append(e)
+    for t, evs in sorted(slots.items()):
+        mins = (t - n).total_seconds() / 60
+        evs.sort(key=lambda e: e["impact"] != "High")  # high impact first
+        high = [e for e in evs if e["impact"] == "High"]
+        new = [e for e in evs if e["id"] not in st["reminded"]]
+        if 0 < mins <= (60 if high else 30) and new:
+            lead = new[0]
+            if len(new) == 1:
+                parts = [f'{"🔴" if lead["impact"] == "High" else "🟠"} {lead["name"]} · {hm(t)} (in {mins:.0f} min)',
+                         f'Fcst {lead["fc"]} · Prev {lead["prev"]}']
+            else:
+                parts = [f'{"🔴" if lead["impact"] == "High" else "🟠"} {hm(t)} (in {mins:.0f} min) · {len(new)} releases']
+                parts += [f'{"🔴" if e["impact"] == "High" else "🟠"} {e["name"]} · Fcst {e["fc"]} · Prev {e["prev"]}'
+                          for e in new[:6]]
+                if len(new) > 6:
+                    parts.append(f"+{len(new) - 6} more")
+            h = hist_line(st, lead["name"])
+            if len(new) > 1:
+                h = h.replace("Past reactions", lead["name"] + " past reactions", 1)
+            parts += [beat_line(lead["name"], lead["fc"]), now_line(st, relevant(lead["name"])), h]
+            send("\n".join(x for x in parts if x), "critical" if lead["impact"] == "High" else "normal")
+            for e in new:
+                st["reminded"].append(e["id"])
+                if mins <= 10:
+                    st["reminded"].append(e["id"] + "|soon")
+                st["pending"].append(dict(title=e["name"], t=t.isoformat(), high=e["impact"] == "High", fc=e["fc"]))
+        elif high and 0 < mins <= 10 and any(e["id"] + "|soon" not in st["reminded"] for e in high):
+            for e in evs:
                 st["reminded"].append(e["id"] + "|soon")
-            st["pending"].append(dict(title=name, t=e["t"].isoformat(), high=e["impact"] == "High",
-                                      fc=e["fc"]))
-        elif (e["impact"] == "High" and 0 < mins <= 10 and e["id"] + "|soon" not in st["reminded"]):
-            st["reminded"].append(e["id"] + "|soon")
-            name = f'{e["cur"]} {e["title"]}'
-            send("\n".join(x for x in (f'⏰ {name} in {mins:.0f} min', beat_line(name, e["fc"]),
-                                       now_line(st, relevant(name))) if x))
-    keep = []
+            lead = high[0]
+            send("\n".join(x for x in (f'⏰ {joined([e["name"] for e in high])} in {mins:.0f} min',
+                                       beat_line(lead["name"], lead["fc"]),
+                                       now_line(st, relevant(lead["name"]))) if x))
+    # after the release: measure each release TIME once (one reaction covers every release in it)
+    keep, groups = [], {}
     for p in st["pending"]:
-        t = datetime.fromisoformat(p["t"])
-        rel = relevant(p["title"])
+        groups.setdefault(p["t"], []).append(p)
+    for t_iso, ps in groups.items():
+        t = datetime.fromisoformat(t_iso)
+        high = [p["title"] for p in ps if p["high"]]
+        rel = list(PAIRS)
         if n < t + timedelta(minutes=65):
-            if (p["high"] and not p.get("quick") and n >= t + timedelta(minutes=6)
+            if (high and not all(p.get("quick") for p in ps) and n >= t + timedelta(minutes=6)
                     and TD_KEY and market_open(n)):
-                p["quick"] = True
-                q = reaction(t, horizon=5)
+                try:
+                    q = reaction(t, horizon=5)
+                except Exception as e:  # e.g. price quota hit: try again next run, give up after +20 min
+                    print("quick reaction failed:", scrub(e)[:120])
+                    q = None
+                if q or n >= t + timedelta(minutes=20):
+                    for p in ps:
+                        p["quick"] = True
                 if q:
-                    send(f'⏱ {p["title"]} +5 min:\n' + "\n".join(
+                    send(f'⏱ {joined(high)} +5 min:\n' + "\n".join(
                         f'{x} {pf(q[x]["m5"])} → {px_fmt(x, q[x]["px"])}' for x in rel if "px" in q[x]))
-            keep.append(p)
+            keep += ps
             continue
         if n > t + timedelta(hours=6):
             continue  # too old to measure reliably
-        r = reaction(t) if TD_KEY else None
+        r = None
+        if TD_KEY:
+            try:
+                r = reaction(t)
+            except Exception as e:
+                print("reaction failed:", scrub(e)[:120])
         if r:
-            st["history"].setdefault(p["title"], []).append(
-                dict(date=p["t"][:16].replace("T", " "), pairs=r, fc=p.get("fc", "n/a")))
-            if p["high"]:
+            date = t_iso[:16].replace("T", " ")
+            for p in ps:
+                h = st["history"].setdefault(p["title"], [])
+                if not any(x["date"] == date for x in h):  # never log the same release twice
+                    h.append(dict(date=date, pairs=r, fc=p.get("fc", "n/a")))
+            if high:
                 body = "\n".join(
                     f'{x} peak {pf(r[x]["peak"])} | 5m {r[x]["m5"]:+.0f} · 30m {r[x]["m30"]:+.0f} · '
                     f'60m {r[x]["m60"]:+.0f}' + (" (faded)" if abs(r[x]["m60"]) < 0.5 * abs(r[x]["peak"]) else "")
                     + (f' → {px_fmt(x, r[x]["px"])}' if "px" in r[x] else "") for x in rel)
-                send(f'📊 {p["title"]} result:\n{body}')
+                send(f'📊 {joined(high)} result:\n{body}')
         else:
-            keep.append(p)
+            for p in ps:
+                p["tries"] = p.get("tries", 0) + 1
+            keep += [p for p in ps if p["tries"] < 12]  # stop after ~1 hour so retries can't drain the price quota
     st["pending"] = keep
 
 
