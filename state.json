@@ -324,7 +324,7 @@
  ],
  "last_heartbeat": "2026-11-13",
  "last_run": {
-  "shock": "2026-11-13T17:15:18.097749+00:00"
+  "shock": "2026-11-13T17:20:32.560971+00:00"
  },
  "sent_log": [
   [
@@ -374,32 +374,8 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-13T17:00:20.480080+00:00",
+  "at": "2026-11-13T17:20:31.965142+00:00",
   "raw": [
-   {
-    "title": "RBA Assist Gov Hunter Speaks",
-    "country": "AUD",
-    "date": "2026-11-08T17:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
-   },
-   {
-    "title": "CPI y/y",
-    "country": "CNY",
-    "date": "2026-11-08T20:30:00-05:00",
-    "impact": "Low",
-    "forecast": "0.8%",
-    "previous": "0.9%"
-   },
-   {
-    "title": "PPI y/y",
-    "country": "CNY",
-    "date": "2026-11-08T20:30:00-05:00",
-    "impact": "Low",
-    "forecast": "5.3%",
-    "previous": "5.0%"
-   },
    {
     "title": "Leading Indicators",
     "country": "JPY",
@@ -423,14 +399,6 @@
     "impact": "Low",
     "forecast": "2.1",
     "previous": "2.7"
-   },
-   {
-    "title": "G7 Meetings",
-    "country": "All",
-    "date": "2026-11-09T04:45:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
    },
    {
     "title": "ECOFIN Meetings",
@@ -481,22 +449,6 @@
     "previous": ""
    },
    {
-    "title": "BOE Gov Bailey Speaks",
-    "country": "GBP",
-    "date": "2026-11-09T12:25:00-05:00",
-    "impact": "Medium",
-    "forecast": "",
-    "previous": ""
-   },
-   {
-    "title": "Westpac Consumer Sentiment",
-    "country": "AUD",
-    "date": "2026-11-09T18:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-4.7%"
-   },
-   {
     "title": "Household Spending y/y",
     "country": "JPY",
     "date": "2026-11-09T18:30:00-05:00",
@@ -529,38 +481,6 @@
     "previous": "2.98T"
    },
    {
-    "title": "BRC Retail Sales Monitor y/y",
-    "country": "GBP",
-    "date": "2026-11-09T19:01:00-05:00",
-    "impact": "Low",
-    "forecast": "1.2%",
-    "previous": "1.0%"
-   },
-   {
-    "title": "NAB Business Confidence",
-    "country": "AUD",
-    "date": "2026-11-09T19:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-13"
-   },
-   {
-    "title": "USD-Denominated Trade Balance",
-    "country": "CNY",
-    "date": "2026-11-09T21:32:00-05:00",
-    "impact": "Low",
-    "forecast": "126.5B",
-    "previous": "133.5B"
-   },
-   {
-    "title": "Trade Balance",
-    "country": "CNY",
-    "date": "2026-11-09T21:33:00-05:00",
-    "impact": "Low",
-    "forecast": "855B",
-    "previous": "906B"
-   },
-   {
     "title": "30-y Bond Auction",
     "country": "JPY",
     "date": "2026-11-09T22:35:00-05:00",
@@ -577,14 +497,6 @@
     "previous": "47.0"
    },
    {
-    "title": "MPC Member Breeden Speaks",
-    "country": "GBP",
-    "date": "2026-11-10T03:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
-   },
-   {
     "title": "FOMC Member Waller Speaks",
     "country": "USD",
     "date": "2026-11-10T04:00:00-05:00",
@@ -593,36 +505,12 @@
     "previous": ""
    },
    {
-    "title": "G7 Meetings",
-    "country": "All",
-    "date": "2026-11-10T04:45:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
-   },
-   {
-    "title": "30-y Bond Auction",
-    "country": "GBP",
-    "date": "2026-11-10T05:02:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "5.52|3.8"
-   },
-   {
     "title": "NFIB Small Business Index",
     "country": "USD",
     "date": "2026-11-10T06:00:00-05:00",
     "impact": "Low",
     "forecast": "98.0",
     "previous": "97.9"
-   },
-   {
-    "title": "MPC Member Lombardelli Speaks",
-    "country": "GBP",
-    "date": "2026-11-10T07:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
    },
    {
     "title": "ADP Weekly Employment Change",
@@ -671,22 +559,6 @@
     "impact": "Low",
     "forecast": "",
     "previous": "5.30|2.8"
-   },
-   {
-    "title": "BOC Summary of Deliberations",
-    "country": "CAD",
-    "date": "2026-11-10T13:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
-   },
-   {
-    "title": "MPC Member Pill Speaks",
-    "country": "GBP",
-    "date": "2026-11-10T13:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
    },
    {
     "title": "FOMC Member Schmid Speaks",
@@ -794,27 +666,11 @@
    },
    {
     "title": "Bank Holiday",
-    "country": "CAD",
-    "date": "2026-11-11T08:00:00-05:00",
-    "impact": "Holiday",
-    "forecast": "",
-    "previous": ""
-   },
-   {
-    "title": "Bank Holiday",
     "country": "USD",
     "date": "2026-11-11T08:00:00-05:00",
     "impact": "Holiday",
     "forecast": "",
     "previous": ""
-   },
-   {
-    "title": "Visitor Arrivals m/m",
-    "country": "NZD",
-    "date": "2026-11-11T16:45:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "2.8%"
    },
    {
     "title": "PPI y/y",
@@ -825,100 +681,12 @@
     "previous": "6.8%"
    },
    {
-    "title": "MI Inflation Expectations",
-    "country": "AUD",
-    "date": "2026-11-11T19:00:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "5.3%"
-   },
-   {
-    "title": "RICS House Price Balance",
-    "country": "GBP",
-    "date": "2026-11-11T19:01:00-05:00",
-    "impact": "Low",
-    "forecast": "-33%",
-    "previous": "-32%"
-   },
-   {
-    "title": "GDP m/m",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "High",
-    "forecast": "0.0%",
-    "previous": "0.1%"
-   },
-   {
-    "title": "Prelim GDP q/q",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "Medium",
-    "forecast": "0.7%",
-    "previous": "0.5%"
-   },
-   {
-    "title": "Construction Output m/m",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "Low",
-    "forecast": "0.0%",
-    "previous": "-0.2%"
-   },
-   {
-    "title": "Goods Trade Balance",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "Low",
-    "forecast": "-19.2B",
-    "previous": "-18.0B"
-   },
-   {
-    "title": "Index of Services 3m/3m",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "Low",
-    "forecast": "0.9%",
-    "previous": "0.9%"
-   },
-   {
-    "title": "Industrial Production m/m",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "Low",
-    "forecast": "-0.4%",
-    "previous": "0.8%"
-   },
-   {
-    "title": "Manufacturing Production m/m",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "Low",
-    "forecast": "-0.5%",
-    "previous": "1.2%"
-   },
-   {
-    "title": "Prelim Business Investment q/q",
-    "country": "GBP",
-    "date": "2026-11-12T02:00:00-05:00",
-    "impact": "Low",
-    "forecast": "0.4%",
-    "previous": "1.7%"
-   },
-   {
     "title": "ECB Economic Bulletin",
     "country": "EUR",
     "date": "2026-11-12T04:00:00-05:00",
     "impact": "Low",
     "forecast": "",
     "previous": ""
-   },
-   {
-    "title": "Building Permits m/m",
-    "country": "CAD",
-    "date": "2026-11-12T08:30:00-05:00",
-    "impact": "Low",
-    "forecast": "-4.0%",
-    "previous": "8.8%"
    },
    {
     "title": "Unemployment Claims",
@@ -951,14 +719,6 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
-   },
-   {
-    "title": "CB Leading Index m/m",
-    "country": "AUD",
-    "date": "2026-11-12T10:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-0.3%"
    },
    {
     "title": "FOMC Member Goolsbee Speaks",
@@ -1025,14 +785,6 @@
     "previous": ""
    },
    {
-    "title": "BusinessNZ Manufacturing Index",
-    "country": "NZD",
-    "date": "2026-11-12T16:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "56.5"
-   },
-   {
     "title": "FOMC Member Williams Speaks",
     "country": "USD",
     "date": "2026-11-12T18:30:00-05:00",
@@ -1049,36 +801,12 @@
     "previous": "1.9%"
    },
    {
-    "title": "PPI m/m",
-    "country": "CHF",
-    "date": "2026-11-13T02:30:00-05:00",
-    "impact": "Low",
-    "forecast": "0.2%",
-    "previous": "0.3%"
-   },
-   {
     "title": "French Final CPI m/m",
     "country": "EUR",
     "date": "2026-11-13T02:45:00-05:00",
     "impact": "Low",
     "forecast": "0.4%",
     "previous": "0.4%"
-   },
-   {
-    "title": "M2 Money Supply y/y",
-    "country": "CNY",
-    "date": "2026-11-13T04:00:00-05:00",
-    "impact": "Low",
-    "forecast": "7.2%",
-    "previous": "7.2%"
-   },
-   {
-    "title": "New Loans",
-    "country": "CNY",
-    "date": "2026-11-13T04:00:00-05:00",
-    "impact": "Low",
-    "forecast": "80B",
-    "previous": "1080B"
    },
    {
     "title": "Italian Trade Balance",
@@ -1113,22 +841,6 @@
     "previous": "-6.8B"
    },
    {
-    "title": "Manufacturing Sales m/m",
-    "country": "CAD",
-    "date": "2026-11-13T08:30:00-05:00",
-    "impact": "Low",
-    "forecast": "0.1%",
-    "previous": "1.5%"
-   },
-   {
-    "title": "Wholesale Sales m/m",
-    "country": "CAD",
-    "date": "2026-11-13T08:30:00-05:00",
-    "impact": "Low",
-    "forecast": "0.5%",
-    "previous": "-1.6%"
-   },
-   {
     "title": "Core PPI m/m",
     "country": "USD",
     "date": "2026-11-13T08:30:00-05:00",
@@ -1151,14 +863,6 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
-   },
-   {
-    "title": "CB Leading Index m/m",
-    "country": "GBP",
-    "date": "2026-11-13T09:30:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-0.1%"
    },
    {
     "title": "FOMC Member Logan Speaks",
@@ -1207,14 +911,6 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
-   },
-   {
-    "title": "MPC Member Greene Speaks",
-    "country": "GBP",
-    "date": "2026-11-14T06:00:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
    }
   ]
  },
@@ -1228,19 +924,19 @@
  },
  "px": {
   "EUR/USD": [
-   1.10346,
-   "2026-11-13T17:13:00+00:00"
+   1.10333,
+   "2026-11-13T17:18:00+00:00"
   ],
   "USD/JPY": [
-   159.89315,
-   "2026-11-13T17:13:00+00:00"
+   159.90798,
+   "2026-11-13T17:18:00+00:00"
   ],
   "EUR/JPY": [
-   176.435695299,
-   "2026-11-13T17:13:00+00:00"
+   176.4312715734,
+   "2026-11-13T17:18:00+00:00"
   ]
  },
- "tg_offset": 0,
+ "tg_offset": 585038439,
  "paused_until": "",
  "last_yen": ""
 }
