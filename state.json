@@ -141,7 +141,58 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
   "https://investinglive.com/forex/euro-falls-to-the-lowest-since-april-2025/",
-  "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
+  "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm",
+  "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261110.xlsx",
+  "https://www.boj.or.jp/en/statistics/set/bffail/sjgb2610.pdf",
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261112a.htm",
+  "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261110.htm",
+  "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2610.pdf",
+  "https://www.boj.or.jp/en/statistics/outline/notice_2026/not261112a.htm",
+  "https://www.boj.or.jp/en/statistics/money/ms/ms2610.pdf",
+  "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2610.pdf",
+  "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
+  "https://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
+  "https://www.boj.or.jp/en/research/research_data/cai/index.htm",
+  "https://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx",
+  "https://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2610.pdf",
+  "https://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2610.pdf",
+  "https://www.boj.or.jp/en/about/release_2026/rel261106b.htm",
+  "https://www.boj.or.jp/en/research/imes/dps/dps26.htm",
+  "https://www.boj.or.jp/en/paym/bond/mbond_list/mbond261105.pdf",
+  "https://www.boj.or.jp/en/statistics/boj/fm/juqp/juqp2611.xlsx",
+  "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
+  "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261030.xlsx",
+  "https://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
+  "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261031.htm",
+  "https://www.boj.or.jp/en/statistics/boj/other/mb/mb.htm",
+  "https://www.boj.or.jp/en/mopo/outlook/gor2610b.pdf",
+  "https://www.boj.or.jp/en/statistics/boj/fm/juqf/juqf10.xlsx",
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030c.pdf",
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030b.pdf",
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030a.pdf",
+  "https://www.boj.or.jp/en/mopo/outlook/gor2610a.pdf",
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030b.pdf",
+  "https://www.boj.or.jp/en/statistics/set/kess/release/2026/kess2609.pdf",
+  "https://www.boj.or.jp/en/research/research_data/cpi/index.htm",
+  "https://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2609.pdf",
+  "https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm",
+  "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261020.xlsx",
+  "https://www.boj.or.jp/en/research/research_data/reri/index.htm",
+  "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261020.htm",
+  "https://www.boj.or.jp/en/statistics/dl/loan/loos/release/loos2610.pdf",
+  "https://www.boj.or.jp/en/statistics/bis/repo/index.htm",
+  "https://www.boj.or.jp/en/statistics/boj/other/cabs/cabs.xlsx",
+  "https://www.boj.or.jp/en/paym/market/mkt261015a.pdf",
+  "https://www.boj.or.jp/en/intl_finance/cooperate/coop261014a.pdf",
+  "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261009.xlsx",
+  "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261010.htm",
+  "https://www.boj.or.jp/en/statistics/money/ms/ms2609.pdf",
+  "https://www.boj.or.jp/en/statistics/set/bffail/sjgb2609.pdf",
+  "https://www.boj.or.jp/en/research/o_survey/ishiki2610.htm",
+  "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2609.pdf",
+  "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2609.pdf"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00"
@@ -202,7 +253,7 @@
  ],
  "last_heartbeat": "2026-11-12",
  "last_run": {
-  "shock": "2026-11-13T01:40:19.982957+00:00"
+  "shock": "2026-11-13T01:45:17.176244+00:00"
  },
  "sent_log": [
   [
@@ -1099,16 +1150,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10599,
-   "2026-11-13T01:38:00+00:00"
+   1.10622,
+   "2026-11-13T01:44:00+00:00"
   ],
   "USD/JPY": [
-   159.87061,
-   "2026-11-13T01:38:00+00:00"
+   159.85804,
+   "2026-11-13T01:44:00+00:00"
   ],
   "EUR/JPY": [
-   176.8152959539,
-   "2026-11-13T01:38:00+00:00"
+   176.83816100879997,
+   "2026-11-13T01:44:00+00:00"
   ]
  }
 }
