@@ -201,10 +201,25 @@
   "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-hawkish-fed-keeps-dollar-bid-5024553"
  ],
  "reminded": [
-  "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00"
+  "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
+  "USD|Core PPI m/m|2026-11-13T13:30:00+00:00",
+  "USD|PPI m/m|2026-11-13T13:30:00+00:00"
  ],
  "alerted": [],
- "pending": [],
+ "pending": [
+  {
+   "title": "USD Core PPI m/m",
+   "t": "2026-11-13T13:30:00+00:00",
+   "high": true,
+   "fc": "0.3%"
+  },
+  {
+   "title": "USD PPI m/m",
+   "t": "2026-11-13T13:30:00+00:00",
+   "high": true,
+   "fc": "0.4%"
+  }
+ ],
  "recent": [
   "BoJ: Quarterly Schedule of Outright Purchases of Japanese Government Bonds (Competitive Auction Method) (October-December 2026) (Schedule Updates)",
   "BoJ: Statement on Monetary Policy",
@@ -261,15 +276,15 @@
  ],
  "last_heartbeat": "2026-11-13",
  "last_run": {
-  "shock": "2026-11-13T12:25:20.966256+00:00"
+  "shock": "2026-11-13T12:30:19.602958+00:00"
  },
  "sent_log": [
   [
-   "2026-11-13T06:00:21.302314+00:00",
+   "2026-11-13T12:30:18.567422+00:00",
    "critical"
   ],
   [
-   "2026-11-13T06:35:17.843622+00:00",
+   "2026-11-13T12:30:19.147538+00:00",
    "critical"
   ]
  ],
@@ -1164,16 +1179,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10476,
-   "2026-11-13T12:23:00+00:00"
+   1.10513,
+   "2026-11-13T12:28:00+00:00"
   ],
   "USD/JPY": [
-   160.04837,
-   "2026-11-13T12:23:00+00:00"
+   160.02605,
+   "2026-11-13T12:28:00+00:00"
   ],
   "EUR/JPY": [
-   176.8150372412,
-   "2026-11-13T12:23:00+00:00"
+   176.8495886365,
+   "2026-11-13T12:28:00+00:00"
   ]
  }
 }
