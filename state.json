@@ -193,7 +193,8 @@
   "https://www.boj.or.jp/en/research/o_survey/ishiki2610.htm",
   "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2609.pdf",
   "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2609.pdf",
-  "https://www.investing.com/news/forex-news/japanese-yen-tests-160-again-drawing-intervention-threats-5023989"
+  "https://www.investing.com/news/forex-news/japanese-yen-tests-160-again-drawing-intervention-threats-5023989",
+  "https://www.investing.com/news/forex-news/asia-fx-yen-intervention-in-focus-as-rate-hike-bets-put-dollar-near-19mth-high-5024024"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00"
@@ -201,7 +202,6 @@
  "alerted": [],
  "pending": [],
  "recent": [
-  "BoJ: Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
   "BoJ: Quarterly Schedule of Outright Purchases of Japanese Government Bonds (Competitive Auction Method) (October-December 2026) (Schedule Updates)",
   "BoJ: Statement on Monetary Policy",
   "BoJ: (Reference) Outlook Report and Indicators Related to Underlying Inflation",
@@ -210,7 +210,8 @@
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
   "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger",
-  "Investing.com: Japanese yen tests 160 again, drawing intervention threats"
+  "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
+  "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -254,11 +255,15 @@
  ],
  "last_heartbeat": "2026-11-12",
  "last_run": {
-  "shock": "2026-11-13T03:35:16.753869+00:00"
+  "shock": "2026-11-13T03:40:18.871731+00:00"
  },
  "sent_log": [
   [
    "2026-11-13T03:20:20.416741+00:00",
+   "critical"
+  ],
+  [
+   "2026-11-13T03:40:20.594331+00:00",
    "critical"
   ]
  ],
@@ -287,11 +292,12 @@
   "usd jpy knocks on the door of 159 00 again dollar bulls risk poking the intervention bear",
   "us 2 year yields surge as the market realizes the us has an inflation problem",
   "japan finance minister katayama warns of decisive action as yen intervention risks linger",
-  "japanese yen tests 160 again drawing intervention threats"
+  "japanese yen tests 160 again drawing intervention threats",
+  "asia fx yen intervention in focus as rate hike bets put dollar near 19 mth high"
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-13T03:20:18.411756+00:00",
+  "at": "2026-11-13T03:40:18.871566+00:00",
   "raw": [
    {
     "title": "RBA Assist Gov Hunter Speaks",
@@ -1152,16 +1158,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10626,
-   "2026-11-13T03:33:00+00:00"
+   1.10599,
+   "2026-11-13T03:38:00+00:00"
   ],
   "USD/JPY": [
-   159.92863,
-   "2026-11-13T03:33:00+00:00"
+   159.93359,
+   "2026-11-13T03:38:00+00:00"
   ],
   "EUR/JPY": [
-   176.9226462238,
-   "2026-11-13T03:33:00+00:00"
+   176.88495120410002,
+   "2026-11-13T03:38:00+00:00"
   ]
  }
 }
