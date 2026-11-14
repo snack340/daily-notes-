@@ -367,7 +367,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-14T12:25:18.301717+00:00",
+  "at": "2026-11-14T12:40:18.964047+00:00",
   "raw": [
    {
     "title": "Leading Indicators",
@@ -921,7 +921,7 @@
   "shock": 0,
   "headlines": 0,
   "heartbeat": 0,
-  "commands": 1
+  "commands": 0
  },
  "px": {
   "EUR/USD": [
