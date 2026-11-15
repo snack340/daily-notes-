@@ -367,7 +367,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-15T14:00:28.217463+00:00",
+  "at": "2026-11-15T14:20:18.040909+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -889,7 +889,7 @@
   "shock": 0,
   "headlines": 0,
   "heartbeat": 0,
-  "commands": 1
+  "commands": 0
  },
  "px": {
   "EUR/USD": [
