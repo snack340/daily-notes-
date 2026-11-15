@@ -327,13 +327,13 @@
   "Investing.com",
   "investingLive"
  ],
- "last_heartbeat": "2026-11-14",
+ "last_heartbeat": "2026-11-15",
  "last_run": {
   "shock": "2026-11-13T21:55:17.906680+00:00"
  },
  "sent_log": [
   [
-   "2026-11-14T06:00:19.402698+00:00",
+   "2026-11-15T06:00:19.359002+00:00",
    "critical"
   ]
  ],
