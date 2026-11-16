@@ -208,7 +208,8 @@
   "http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm",
   "https://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm",
   "https://www.investing.com/news/forex-news/asia-fx-muted-as-dollar-holds-near-19mth-high-yen-steady-after-weak-gdp-5028358",
-  "https://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm"
+  "https://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm",
+  "http://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -334,7 +335,7 @@
  ],
  "last_heartbeat": "2026-11-16",
  "last_run": {
-  "shock": "2026-11-16T08:00:21.298283+00:00"
+  "shock": "2026-11-16T08:05:16.872208+00:00"
  },
  "sent_log": [
   [
@@ -907,16 +908,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.1018,
-   "2026-11-16T07:58:00+00:00"
+   1.10156,
+   "2026-11-16T08:03:00+00:00"
   ],
   "USD/JPY": [
-   159.50607,
-   "2026-11-16T07:58:00+00:00"
+   159.57037,
+   "2026-11-16T08:03:00+00:00"
   ],
   "EUR/JPY": [
-   175.74378792599998,
-   "2026-11-16T07:58:00+00:00"
+   175.77633677720002,
+   "2026-11-16T08:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
