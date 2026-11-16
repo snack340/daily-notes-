@@ -211,7 +211,8 @@
   "https://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm",
   "http://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm",
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261116~db374b56ab.en.html",
-  "https://www.investing.com/news/forex-news/eurozone-yields-stall-after-volatile-week-as-traders-brace-for-ai-megatests-5028425"
+  "https://www.investing.com/news/forex-news/eurozone-yields-stall-after-volatile-week-as-traders-brace-for-ai-megatests-5028425",
+  "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -337,7 +338,7 @@
  ],
  "last_heartbeat": "2026-11-16",
  "last_run": {
-  "shock": "2026-11-16T09:55:17.520349+00:00"
+  "shock": "2026-11-16T10:00:17.167646+00:00"
  },
  "sent_log": [
   [
@@ -910,16 +911,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10069,
-   "2026-11-16T09:53:00+00:00"
+   1.10085,
+   "2026-11-16T09:58:00+00:00"
   ],
   "USD/JPY": [
-   159.54281,
-   "2026-11-16T09:53:00+00:00"
+   159.57289,
+   "2026-11-16T09:58:00+00:00"
   ],
   "EUR/JPY": [
-   175.60717553889998,
-   "2026-11-16T09:53:00+00:00"
+   175.6658159565,
+   "2026-11-16T09:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
