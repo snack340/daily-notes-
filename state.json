@@ -205,7 +205,8 @@
   "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm",
   "https://www.investing.com/news/forex-news/brazils-bolsonaro-shrugs-off-fugitive-label-eyes-future-brazil-presidential-bid-5026806",
   "https://www.investing.com/news/forex-news/yen-steady-against-euro-and-dollar-after-soft-japanese-gdp-data-5028268",
-  "http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm"
+  "http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm",
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -331,7 +332,7 @@
  ],
  "last_heartbeat": "2026-11-15",
  "last_run": {
-  "shock": "2026-11-16T04:10:19.884241+00:00"
+  "shock": "2026-11-16T04:15:17.581693+00:00"
  },
  "sent_log": [
   [
@@ -904,16 +905,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10168,
-   "2026-11-16T04:08:00+00:00"
+   1.10174,
+   "2026-11-16T04:13:00+00:00"
   ],
   "USD/JPY": [
-   159.58915,
-   "2026-11-16T04:08:00+00:00"
+   159.59749,
+   "2026-11-16T04:13:00+00:00"
   ],
   "EUR/JPY": [
-   175.81617477199998,
-   "2026-11-16T04:08:00+00:00"
+   175.83493863259997,
+   "2026-11-16T04:13:00+00:00"
   ]
  },
  "tg_offset": 585038439,
