@@ -374,7 +374,7 @@
  ],
  "last_heartbeat": "2026-11-16",
  "last_run": {
-  "shock": "2026-11-16T20:40:17.406494+00:00"
+  "shock": "2026-11-16T20:45:18.718526+00:00"
  },
  "sent_log": [
   [
@@ -417,7 +417,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-16T20:25:19.100626+00:00",
+  "at": "2026-11-16T20:45:18.718359+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -495,6 +495,22 @@
     "title": "FOMC Member Hammack Speaks",
     "country": "USD",
     "date": "2026-11-16T14:15:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "FOMC Member Barkin Speaks",
+    "country": "USD",
+    "date": "2026-11-16T18:10:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "FOMC Member Goolsbee Speaks",
+    "country": "USD",
+    "date": "2026-11-16T18:30:00-05:00",
     "impact": "Low",
     "forecast": "",
     "previous": ""
@@ -812,6 +828,14 @@
     "previous": ""
    },
    {
+    "title": "FOMC Member Jefferson Speaks",
+    "country": "USD",
+    "date": "2026-11-19T09:25:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "CB Leading Index m/m",
     "country": "USD",
     "date": "2026-11-19T10:00:00-05:00",
@@ -951,16 +975,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.0999,
-   "2026-11-16T20:38:00+00:00"
+   1.09985,
+   "2026-11-16T20:43:00+00:00"
   ],
   "USD/JPY": [
-   159.46056,
-   "2026-11-16T20:38:00+00:00"
+   159.4621,
+   "2026-11-16T20:43:00+00:00"
   ],
   "EUR/JPY": [
-   175.390669944,
-   "2026-11-16T20:38:00+00:00"
+   175.384390685,
+   "2026-11-16T20:43:00+00:00"
   ]
  },
  "tg_offset": 585038439,
