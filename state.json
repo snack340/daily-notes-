@@ -206,7 +206,8 @@
   "https://www.investing.com/news/forex-news/brazils-bolsonaro-shrugs-off-fugitive-label-eyes-future-brazil-presidential-bid-5026806",
   "https://www.investing.com/news/forex-news/yen-steady-against-euro-and-dollar-after-soft-japanese-gdp-data-5028268",
   "http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm",
-  "https://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm"
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm",
+  "https://www.investing.com/news/forex-news/asia-fx-muted-as-dollar-holds-near-19mth-high-yen-steady-after-weak-gdp-5028358"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -332,7 +333,7 @@
  ],
  "last_heartbeat": "2026-11-15",
  "last_run": {
-  "shock": "2026-11-16T04:55:17.280754+00:00"
+  "shock": "2026-11-16T05:00:18.380705+00:00"
  },
  "sent_log": [
   [
@@ -371,7 +372,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-16T04:40:17.710040+00:00",
+  "at": "2026-11-16T05:00:18.380441+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -905,16 +906,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10165,
-   "2026-11-16T04:53:00+00:00"
+   1.10184,
+   "2026-11-16T04:58:00+00:00"
   ],
   "USD/JPY": [
-   159.65075,
-   "2026-11-16T04:53:00+00:00"
+   159.63269,
+   "2026-11-16T04:58:00+00:00"
   ],
   "EUR/JPY": [
-   175.87924873749998,
-   "2026-11-16T04:53:00+00:00"
+   175.8896831496,
+   "2026-11-16T04:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
