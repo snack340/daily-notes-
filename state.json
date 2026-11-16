@@ -204,7 +204,8 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
   "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm",
   "https://www.investing.com/news/forex-news/brazils-bolsonaro-shrugs-off-fugitive-label-eyes-future-brazil-presidential-bid-5026806",
-  "https://www.investing.com/news/forex-news/yen-steady-against-euro-and-dollar-after-soft-japanese-gdp-data-5028268"
+  "https://www.investing.com/news/forex-news/yen-steady-against-euro-and-dollar-after-soft-japanese-gdp-data-5028268",
+  "http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -216,7 +217,6 @@
  "alerted": [],
  "pending": [],
  "recent": [
-  "BoJ: Quarterly Schedule of Outright Purchases of Japanese Government Bonds (Competitive Auction Method) (October-December 2026) (Schedule Updates)",
   "BoJ: Statement on Monetary Policy",
   "BoJ: (Reference) Outlook Report and Indicators Related to Underlying Inflation",
   "BoJ: Indicators for Core CPI",
@@ -225,7 +225,8 @@
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
   "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger",
   "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
-  "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high"
+  "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
+  "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -330,11 +331,11 @@
  ],
  "last_heartbeat": "2026-11-15",
  "last_run": {
-  "shock": "2026-11-16T03:55:20.425257+00:00"
+  "shock": "2026-11-16T04:00:19.863668+00:00"
  },
  "sent_log": [
   [
-   "2026-11-15T06:00:19.359002+00:00",
+   "2026-11-16T04:00:21.060469+00:00",
    "critical"
   ]
  ],
@@ -364,11 +365,12 @@
   "us 2 year yields surge as the market realizes the us has an inflation problem",
   "japan finance minister katayama warns of decisive action as yen intervention risks linger",
   "japanese yen tests 160 again drawing intervention threats",
-  "asia fx yen intervention in focus as rate hike bets put dollar near 19 mth high"
+  "asia fx yen intervention in focus as rate hike bets put dollar near 19 mth high",
+  "speech by board member takata at a meeting held by the tokushima association of corporate executives economic activity prices and monetary policy in japan japan s money and capital market transformation will a paradigm shift occur"
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-16T03:45:18.647048+00:00",
+  "at": "2026-11-16T04:00:19.863481+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -902,16 +904,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10173,
-   "2026-11-16T03:53:00+00:00"
+   1.10175,
+   "2026-11-16T03:58:00+00:00"
   ],
   "USD/JPY": [
-   159.62013,
-   "2026-11-16T03:53:00+00:00"
+   159.66946,
+   "2026-11-16T03:58:00+00:00"
   ],
   "EUR/JPY": [
-   175.8582858249,
-   "2026-11-16T03:53:00+00:00"
+   175.915827555,
+   "2026-11-16T03:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
