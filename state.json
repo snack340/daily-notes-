@@ -212,7 +212,9 @@
   "http://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm",
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261116~db374b56ab.en.html",
   "https://www.investing.com/news/forex-news/eurozone-yields-stall-after-volatile-week-as-traders-brace-for-ai-megatests-5028425",
-  "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm"
+  "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+  "https://www.investing.com/news/forex-news/sterling-today-pound-extends-slide-as-dollar-firms-on-hawkish-fed-bets-5028808",
+  "https://investinglive.com/forex/market-outlook-for-the-week-of-16th-20th-november/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -338,7 +340,7 @@
  ],
  "last_heartbeat": "2026-11-16",
  "last_run": {
-  "shock": "2026-11-16T10:15:20.647393+00:00"
+  "shock": "2026-11-16T10:20:25.930998+00:00"
  },
  "sent_log": [
   [
@@ -911,16 +913,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10112,
-   "2026-11-16T10:13:00+00:00"
+   1.10113,
+   "2026-11-16T10:18:00+00:00"
   ],
   "USD/JPY": [
-   159.58038,
-   "2026-11-16T10:13:00+00:00"
+   159.60451,
+   "2026-11-16T10:18:00+00:00"
   ],
   "EUR/JPY": [
-   175.7171480256,
-   "2026-11-16T10:13:00+00:00"
+   175.7453140963,
+   "2026-11-16T10:18:00+00:00"
   ]
  },
  "tg_offset": 585038439,
