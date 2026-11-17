@@ -218,7 +218,8 @@
   "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261116_1~11dd7f62af.en.html",
   "https://investinglive.com/forex/forget-the-petro-dollar-introducing-the-chip-dollar/",
   "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm",
-  "http://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm"
+  "http://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm",
+  "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-hits-19mth-peak-on-fed-tightening-bets-5031600"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -375,7 +376,7 @@
  ],
  "last_heartbeat": "2026-11-16",
  "last_run": {
-  "shock": "2026-11-17T04:35:16.652158+00:00"
+  "shock": "2026-11-17T04:40:24.443689+00:00"
  },
  "sent_log": [
   [
@@ -984,16 +985,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10063,
-   "2026-11-17T04:33:00+00:00"
+   1.10048,
+   "2026-11-17T04:39:00+00:00"
   ],
   "USD/JPY": [
-   159.19474,
-   "2026-11-17T04:33:00+00:00"
+   159.21795,
+   "2026-11-17T04:39:00+00:00"
   ],
   "EUR/JPY": [
-   175.2145066862,
-   "2026-11-17T04:33:00+00:00"
+   175.21616961599997,
+   "2026-11-17T04:39:00+00:00"
   ]
  },
  "tg_offset": 585038439,
