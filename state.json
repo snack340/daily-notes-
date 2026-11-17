@@ -221,7 +221,8 @@
   "http://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm",
   "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-hits-19mth-peak-on-fed-tightening-bets-5031600",
   "https://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm",
-  "https://www.investing.com/news/forex-news/canada-and-china-extend-trade-deals-as-xi-meets-carney-ahead-of-apec-summit-5031875"
+  "https://www.investing.com/news/forex-news/canada-and-china-extend-trade-deals-as-xi-meets-carney-ahead-of-apec-summit-5031875",
+  "https://www.investing.com/news/forex-news/euro-yields-hold-near-1month-peaks-on-relentless-us-treasury-pull-5031817"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -378,7 +379,7 @@
  ],
  "last_heartbeat": "2026-11-17",
  "last_run": {
-  "shock": "2026-11-17T09:15:17.218820+00:00"
+  "shock": "2026-11-17T09:20:18.208188+00:00"
  },
  "sent_log": [
   [
@@ -983,16 +984,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10033,
-   "2026-11-17T09:13:00+00:00"
+   1.10061,
+   "2026-11-17T09:18:00+00:00"
   ],
   "USD/JPY": [
-   158.93534,
-   "2026-11-17T09:13:00+00:00"
+   158.95169,
+   "2026-11-17T09:18:00+00:00"
   ],
   "EUR/JPY": [
-   174.8813226622,
-   "2026-11-17T09:13:00+00:00"
+   174.94381953090002,
+   "2026-11-17T09:18:00+00:00"
   ]
  },
  "tg_offset": 585038439,
