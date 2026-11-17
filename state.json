@@ -225,7 +225,8 @@
   "https://www.investing.com/news/forex-news/euro-yields-hold-near-1month-peaks-on-relentless-us-treasury-pull-5031817",
   "https://www.investing.com/news/forex-news/sterling-today-pound-set-to-snap-slide-as-dollar-pauses-uk-jobless-dips-to-46-5032079",
   "https://www.investing.com/news/forex-news/citi-forecasts-brazilian-real-to-weaken-to-550-per-dollar-in-2027-93CH-5032448",
-  "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm"
+  "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+  "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -444,7 +445,7 @@
  ],
  "last_heartbeat": "2026-11-17",
  "last_run": {
-  "shock": "2026-11-17T18:30:17.210960+00:00"
+  "shock": "2026-11-17T18:35:19.601424+00:00"
  },
  "sent_log": [
   [
@@ -1049,16 +1050,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10143,
-   "2026-11-17T18:28:00+00:00"
+   1.10139,
+   "2026-11-17T18:33:00+00:00"
   ],
   "USD/JPY": [
-   159.30052,
-   "2026-11-17T18:28:00+00:00"
+   159.31207,
+   "2026-11-17T18:33:00+00:00"
   ],
   "EUR/JPY": [
-   175.4583717436,
-   "2026-11-17T18:28:00+00:00"
+   175.46472077730002,
+   "2026-11-17T18:33:00+00:00"
   ]
  },
  "tg_offset": 585038439,
