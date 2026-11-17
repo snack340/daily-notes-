@@ -220,7 +220,8 @@
   "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm",
   "http://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm",
   "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-hits-19mth-peak-on-fed-tightening-bets-5031600",
-  "https://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm"
+  "https://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm",
+  "https://www.investing.com/news/forex-news/canada-and-china-extend-trade-deals-as-xi-meets-carney-ahead-of-apec-summit-5031875"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -377,7 +378,7 @@
  ],
  "last_heartbeat": "2026-11-17",
  "last_run": {
-  "shock": "2026-11-17T07:55:18.235047+00:00"
+  "shock": "2026-11-17T08:00:18.600763+00:00"
  },
  "sent_log": [
   [
@@ -416,7 +417,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-17T07:40:19.415866+00:00",
+  "at": "2026-11-17T08:00:18.600508+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -982,16 +983,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10009,
-   "2026-11-17T07:53:00+00:00"
+   1.09959,
+   "2026-11-17T07:58:00+00:00"
   ],
   "USD/JPY": [
-   159.31292,
-   "2026-11-17T07:53:00+00:00"
+   159.35552,
+   "2026-11-17T07:58:00+00:00"
   ],
   "EUR/JPY": [
-   175.2585501628,
-   "2026-11-17T07:53:00+00:00"
+   175.22573623680003,
+   "2026-11-17T07:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
