@@ -230,7 +230,9 @@
   "https://investinglive.com/forex/morgan-stanley-sees-usd-jpy-fair-value-above-170-forecasts-yen-at-162-by-late-2027/",
   "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-19mth-high-on-fed-hike-bets-5034711",
   "https://www.investing.com/news/forex-news/after-63-billion-crypto-heist-binance-plans-foray-into-5-asian-markets-5034971",
-  "https://www.investing.com/news/forex-news/canada-adjusts-china-ties-carney-says-aiming-to-clinch-right-deal-with-us-5035098"
+  "https://www.investing.com/news/forex-news/canada-adjusts-china-ties-carney-says-aiming-to-clinch-right-deal-with-us-5035098",
+  "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf",
+  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -457,7 +459,7 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-18T09:05:19.211526+00:00"
+  "shock": "2026-11-18T09:10:18.983024+00:00"
  },
  "sent_log": [
   [
@@ -496,7 +498,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-18T08:50:29.175336+00:00",
+  "at": "2026-11-18T09:10:18.964230+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1062,16 +1064,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09637,
-   "2026-11-18T09:03:00+00:00"
+   1.09629,
+   "2026-11-18T09:08:00+00:00"
   ],
   "USD/JPY": [
-   159.18444,
-   "2026-11-18T09:03:00+00:00"
+   159.20218,
+   "2026-11-18T09:08:00+00:00"
   ],
   "EUR/JPY": [
-   174.5250444828,
-   "2026-11-18T09:03:00+00:00"
+   174.5317579122,
+   "2026-11-18T09:08:00+00:00"
   ]
  },
  "tg_offset": 585038439,
