@@ -229,7 +229,8 @@
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
   "https://investinglive.com/forex/morgan-stanley-sees-usd-jpy-fair-value-above-170-forecasts-yen-at-162-by-late-2027/",
   "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-19mth-high-on-fed-hike-bets-5034711",
-  "https://www.investing.com/news/forex-news/after-63-billion-crypto-heist-binance-plans-foray-into-5-asian-markets-5034971"
+  "https://www.investing.com/news/forex-news/after-63-billion-crypto-heist-binance-plans-foray-into-5-asian-markets-5034971",
+  "https://www.investing.com/news/forex-news/canada-adjusts-china-ties-carney-says-aiming-to-clinch-right-deal-with-us-5035098"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -456,7 +457,7 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-18T08:30:19.336166+00:00"
+  "shock": "2026-11-18T08:35:23.425338+00:00"
  },
  "sent_log": [
   [
@@ -495,7 +496,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-18T08:20:17.811554+00:00",
+  "at": "2026-11-18T08:35:23.419825+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1061,16 +1062,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.0965,
-   "2026-11-18T08:28:00+00:00"
+   1.0967,
+   "2026-11-18T08:33:00+00:00"
   ],
   "USD/JPY": [
-   159.29954,
-   "2026-11-18T08:28:00+00:00"
+   159.23303,
+   "2026-11-18T08:33:00+00:00"
   ],
   "EUR/JPY": [
-   174.67194561000002,
-   "2026-11-18T08:28:00+00:00"
+   174.63086400100002,
+   "2026-11-18T08:33:00+00:00"
   ]
  },
  "tg_offset": 585038439,
