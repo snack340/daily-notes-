@@ -252,14 +252,7 @@
   "EUR|ECB President Lagarde Speaks|2026-11-18T14:25:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "EUR ECB President Lagarde Speaks",
-   "t": "2026-11-18T14:25:00+00:00",
-   "high": false,
-   "fc": "n/a"
-  }
- ],
+ "pending": [],
  "recent": [
   "BoJ: Statement on Monetary Policy",
   "BoJ: (Reference) Outlook Report and Indicators Related to Underlying Inflation",
@@ -475,6 +468,35 @@
     },
     "fc": "n/a"
    }
+  ],
+  "EUR ECB President Lagarde Speaks": [
+   {
+    "date": "2026-11-18 14:25",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -1.2,
+      "m30": 6.5,
+      "m60": 0.5,
+      "peak": 12.6,
+      "px": 1.09693
+     },
+     "USD/JPY": {
+      "m5": 3.3,
+      "m30": -6.8,
+      "m60": -6.1,
+      "peak": -16.9,
+      "px": 159.27139
+     },
+     "EUR/JPY": {
+      "m5": 1.7,
+      "m30": 2.9,
+      "m60": -5.9,
+      "peak": -6.9,
+      "px": 174.70957
+     }
+    },
+    "fc": "n/a"
+   }
   ]
  },
  "last_shock": {
@@ -491,7 +513,7 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-18T15:25:18.607893+00:00"
+  "shock": "2026-11-18T15:30:18.976244+00:00"
  },
  "sent_log": [
   [
@@ -1096,16 +1118,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.0968,
-   "2026-11-18T15:23:00+00:00"
+   1.09652,
+   "2026-11-18T15:28:00+00:00"
   ],
   "USD/JPY": [
-   159.29668,
-   "2026-11-18T15:23:00+00:00"
+   159.30437,
+   "2026-11-18T15:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.716598624,
-   "2026-11-18T15:23:00+00:00"
+   174.6804277924,
+   "2026-11-18T15:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
