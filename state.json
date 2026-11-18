@@ -242,10 +242,18 @@
   "USD|Core Retail Sales m/m|2026-11-17T13:30:00+00:00",
   "USD|Retail Sales m/m|2026-11-17T13:30:00+00:00",
   "USD|Core Retail Sales m/m|2026-11-17T13:30:00+00:00|soon",
-  "USD|Retail Sales m/m|2026-11-17T13:30:00+00:00|soon"
+  "USD|Retail Sales m/m|2026-11-17T13:30:00+00:00|soon",
+  "EUR|ECB Financial Stability Review|2026-11-18T09:00:00+00:00"
  ],
  "alerted": [],
- "pending": [],
+ "pending": [
+  {
+   "title": "EUR ECB Financial Stability Review",
+   "t": "2026-11-18T09:00:00+00:00",
+   "high": false,
+   "fc": "n/a"
+  }
+ ],
  "recent": [
   "BoJ: Statement on Monetary Policy",
   "BoJ: (Reference) Outlook Report and Indicators Related to Underlying Inflation",
@@ -448,12 +456,12 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-18T08:25:17.496420+00:00"
+  "shock": "2026-11-18T08:30:19.336166+00:00"
  },
  "sent_log": [
   [
-   "2026-11-18T06:00:23.471011+00:00",
-   "critical"
+   "2026-11-18T08:30:18.881483+00:00",
+   "normal"
   ]
  ],
  "titles": [
@@ -1053,16 +1061,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09646,
-   "2026-11-18T08:23:00+00:00"
+   1.0965,
+   "2026-11-18T08:28:00+00:00"
   ],
   "USD/JPY": [
-   159.28917,
-   "2026-11-18T08:23:00+00:00"
+   159.29954,
+   "2026-11-18T08:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.6542033382,
-   "2026-11-18T08:23:00+00:00"
+   174.67194561000002,
+   "2026-11-18T08:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
