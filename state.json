@@ -233,7 +233,8 @@
   "https://www.investing.com/news/forex-news/canada-adjusts-china-ties-carney-says-aiming-to-clinch-right-deal-with-us-5035098",
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf",
   "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
-  "https://www.investing.com/news/forex-news/euro-yields-anchor-near-1month-highs-as-traders-brace-for-sticky-inflation-print-5034892"
+  "https://www.investing.com/news/forex-news/euro-yields-anchor-near-1month-highs-as-traders-brace-for-sticky-inflation-print-5034892",
+  "https://www.investing.com/news/forex-news/sterling-today-pound-slips-as-us-rate-bets-outweigh-uk-cpi-rise-to-36-5035366"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -482,7 +483,7 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-18T10:55:19.747224+00:00"
+  "shock": "2026-11-18T11:00:18.542156+00:00"
  },
  "sent_log": [
   [
@@ -1087,16 +1088,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09717,
-   "2026-11-18T10:53:00+00:00"
+   1.09719,
+   "2026-11-18T10:58:00+00:00"
   ],
   "USD/JPY": [
-   159.29191,
-   "2026-11-18T10:53:00+00:00"
+   159.33076,
+   "2026-11-18T10:58:00+00:00"
   ],
   "EUR/JPY": [
-   174.7703048947,
-   "2026-11-18T10:53:00+00:00"
+   174.8161165644,
+   "2026-11-18T10:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
