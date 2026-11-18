@@ -232,7 +232,8 @@
   "https://www.investing.com/news/forex-news/after-63-billion-crypto-heist-binance-plans-foray-into-5-asian-markets-5034971",
   "https://www.investing.com/news/forex-news/canada-adjusts-china-ties-carney-says-aiming-to-clinch-right-deal-with-us-5035098",
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf",
-  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html"
+  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+  "https://www.investing.com/news/forex-news/euro-yields-anchor-near-1month-highs-as-traders-brace-for-sticky-inflation-print-5034892"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -459,7 +460,7 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-18T09:15:30.172760+00:00"
+  "shock": "2026-11-18T09:20:17.381360+00:00"
  },
  "sent_log": [
   [
@@ -1064,16 +1065,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09619,
-   "2026-11-18T09:14:00+00:00"
+   1.09611,
+   "2026-11-18T09:18:00+00:00"
   ],
   "USD/JPY": [
-   159.23836,
-   "2026-11-18T09:14:00+00:00"
+   159.27903,
+   "2026-11-18T09:18:00+00:00"
   ],
   "EUR/JPY": [
-   174.5554978484,
-   "2026-11-18T09:14:00+00:00"
+   174.5873375733,
+   "2026-11-18T09:18:00+00:00"
   ]
  },
  "tg_offset": 585038439,
