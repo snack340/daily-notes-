@@ -260,10 +260,32 @@
   "EUR|ECB Financial Stability Review|2026-11-18T09:00:00+00:00",
   "EUR|ECB President Lagarde Speaks|2026-11-18T14:25:00+00:00",
   "USD|FOMC Meeting Minutes|2026-11-18T19:00:00+00:00",
-  "USD|FOMC Meeting Minutes|2026-11-18T19:00:00+00:00|soon"
+  "USD|FOMC Meeting Minutes|2026-11-18T19:00:00+00:00|soon",
+  "EUR|ECB President Lagarde Speaks|2026-11-19T13:30:00+00:00",
+  "USD|Philly Fed Manufacturing Index|2026-11-19T13:30:00+00:00",
+  "USD|Unemployment Claims|2026-11-19T13:30:00+00:00"
  ],
  "alerted": [],
- "pending": [],
+ "pending": [
+  {
+   "title": "EUR ECB President Lagarde Speaks",
+   "t": "2026-11-19T13:30:00+00:00",
+   "high": false,
+   "fc": "n/a"
+  },
+  {
+   "title": "USD Philly Fed Manufacturing Index",
+   "t": "2026-11-19T13:30:00+00:00",
+   "high": false,
+   "fc": "20.6"
+  },
+  {
+   "title": "USD Unemployment Claims",
+   "t": "2026-11-19T13:30:00+00:00",
+   "high": false,
+   "fc": "198K"
+  }
+ ],
  "recent": [
   "BoJ: Indicators for Core CPI",
   "Investing.com: Dollar extends surge on raised Fed rate hike expectations, hits over 19-month high",
@@ -553,13 +575,13 @@
  ],
  "last_heartbeat": "2026-11-19",
  "last_run": {
-  "shock": "2026-11-19T12:55:17.157650+00:00",
+  "shock": "2026-11-19T13:00:23.288718+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-19T06:00:33.199077+00:00",
-   "critical"
+   "2026-11-19T13:00:22.912473+00:00",
+   "normal"
   ]
  ],
  "titles": [
@@ -1161,16 +1183,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09951,
-   "2026-11-19T12:53:00+00:00"
+   1.09963,
+   "2026-11-19T12:58:00+00:00"
   ],
   "USD/JPY": [
-   159.91709,
-   "2026-11-19T12:53:00+00:00"
+   159.91734,
+   "2026-11-19T12:58:00+00:00"
   ],
   "EUR/JPY": [
-   175.8304396259,
-   "2026-11-19T12:53:00+00:00"
+   175.8499045842,
+   "2026-11-19T12:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
