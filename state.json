@@ -243,7 +243,8 @@
   "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703",
   "https://www.investing.com/news/forex-news/euro-yields-idle-near-1month-peaks-on-hawkish-fed-and-ecb-rhetoric-trap-5037883",
   "https://www.investing.com/news/forex-news/sterling-today-pound-flat-as-dollar-holds-firm-uk-gen-z-confidence-slumps-5038221",
-  "https://www.investing.com/news/forex-news/the-ai-boom-is-keeping-the-dollar-strong-what-comes-next-in-2027-5038464"
+  "https://www.investing.com/news/forex-news/the-ai-boom-is-keeping-the-dollar-strong-what-comes-next-in-2027-5038464",
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -287,7 +288,6 @@
   }
  ],
  "recent": [
-  "BoJ: Indicators for Core CPI",
   "Investing.com: Dollar extends surge on raised Fed rate hike expectations, hits over 19-month high",
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
@@ -296,7 +296,8 @@
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
   "Fed: Minutes of the Federal Open Market Committee, October 27-28, 2026",
-  "BoJ: Statement by Governor UEDA concerning the Bank's Semiannual Report on Currency and Monetary Control (Committee on Financial Affairs, Senate)"
+  "BoJ: Statement by Governor UEDA concerning the Bank's Semiannual Report on Currency and Monetary Control (Committee on Financial Affairs, Senate)",
+  "Fed speeches: Jefferson, Monetary Policy amid Frequent and Complex Shocks"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -575,13 +576,13 @@
  ],
  "last_heartbeat": "2026-11-19",
  "last_run": {
-  "shock": "2026-11-19T14:20:18.135082+00:00",
+  "shock": "2026-11-19T14:25:18.465568+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-19T13:00:22.912473+00:00",
-   "normal"
+   "2026-11-19T14:25:19.624792+00:00",
+   "critical"
   ]
  ],
  "titles": [
@@ -613,7 +614,8 @@
   "asia fx yen intervention in focus as rate hike bets put dollar near 19 mth high",
   "speech by board member takata at a meeting held by the tokushima association of corporate executives economic activity prices and monetary policy in japan japan s money and capital market transformation will a paradigm shift occur",
   "minutes of the federal open market committee october 27 28 2026",
-  "statement by governor ueda concerning the bank s semiannual report on currency and monetary control committee on financial affairs senate"
+  "statement by governor ueda concerning the bank s semiannual report on currency and monetary control committee on financial affairs senate",
+  "jefferson monetary policy amid frequent and complex shocks"
  ],
  "held": 0,
  "cal": {
@@ -1183,16 +1185,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10047,
-   "2026-11-19T14:18:00+00:00"
+   1.10006,
+   "2026-11-19T14:23:00+00:00"
   ],
   "USD/JPY": [
-   159.89294,
-   "2026-11-19T14:18:00+00:00"
+   159.86985,
+   "2026-11-19T14:23:00+00:00"
   ],
   "EUR/JPY": [
-   175.95738368180002,
-   "2026-11-19T14:18:00+00:00"
+   175.866427191,
+   "2026-11-19T14:23:00+00:00"
   ]
  },
  "tg_offset": 585038439,
