@@ -244,7 +244,10 @@
   "https://www.investing.com/news/forex-news/euro-yields-idle-near-1month-peaks-on-hawkish-fed-and-ecb-rhetoric-trap-5037883",
   "https://www.investing.com/news/forex-news/sterling-today-pound-flat-as-dollar-holds-firm-uk-gen-z-confidence-slumps-5038221",
   "https://www.investing.com/news/forex-news/the-ai-boom-is-keeping-the-dollar-strong-what-comes-next-in-2027-5038464",
-  "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm",
+  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
+  "https://www.investing.com/news/forex-news/brazilian-real-near-52week-lows-as-fiscal-concerns-weigh-on-currency-93CH-5039497",
+  "https://www.investing.com/news/forex-news/mexican-peso-falls-to-52week-low-as-banxicofed-rate-gap-narrows-93CH-5039488"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -642,7 +645,7 @@
  ],
  "last_heartbeat": "2026-11-19",
  "last_run": {
-  "shock": "2026-11-19T15:55:19.954589+00:00",
+  "shock": "2026-11-19T16:00:24.680406+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -685,7 +688,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-19T15:45:18.644505+00:00",
+  "at": "2026-11-19T16:00:24.672317+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1251,16 +1254,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09871,
-   "2026-11-19T15:53:00+00:00"
+   1.09832,
+   "2026-11-19T15:59:00+00:00"
   ],
   "USD/JPY": [
-   159.74663,
-   "2026-11-19T15:53:00+00:00"
+   159.81205,
+   "2026-11-19T15:59:00+00:00"
   ],
   "EUR/JPY": [
-   175.51521984730002,
-   "2026-11-19T15:53:00+00:00"
+   175.52477075599998,
+   "2026-11-19T15:59:00+00:00"
   ]
  },
  "tg_offset": 585038439,
