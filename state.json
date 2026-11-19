@@ -238,7 +238,8 @@
   "https://www.investing.com/news/forex-news/gbpusd-slide-driven-by-dollar-strength-not-sterling-weakness-93CH-5036710",
   "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
-  "http://www.boj.or.jp/en/mopo/diet/d_state/dst261119a.htm"
+  "http://www.boj.or.jp/en/mopo/diet/d_state/dst261119a.htm",
+  "https://www.boj.or.jp/en/mopo/diet/d_state/dst261119a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -548,7 +549,7 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-19T04:05:20.185349+00:00",
+  "shock": "2026-11-19T04:10:21.169409+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1156,16 +1157,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09609,
-   "2026-11-19T04:04:00+00:00"
+   1.09603,
+   "2026-11-19T04:08:00+00:00"
   ],
   "USD/JPY": [
-   159.6052,
-   "2026-11-19T04:04:00+00:00"
+   159.6361,
+   "2026-11-19T04:08:00+00:00"
   ],
   "EUR/JPY": [
-   174.941663668,
-   "2026-11-19T04:04:00+00:00"
+   174.965954683,
+   "2026-11-19T04:08:00+00:00"
   ]
  },
  "tg_offset": 585038439,
