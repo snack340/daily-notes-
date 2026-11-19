@@ -249,7 +249,8 @@
   "https://www.investing.com/news/forex-news/brazilian-real-near-52week-lows-as-fiscal-concerns-weigh-on-currency-93CH-5039497",
   "https://www.investing.com/news/forex-news/mexican-peso-falls-to-52week-low-as-banxicofed-rate-gap-narrows-93CH-5039488",
   "https://www.investing.com/news/forex-news/dollar-index-hits-52week-high-driven-by-haven-demand-and-rate-expectations-93CH-5039556",
-  "https://www.investing.com/news/forex-news/offshore-yuan-dip-looks-like-a-liquidity-blip-not-a-trend-shift-93CH-5039801"
+  "https://www.investing.com/news/forex-news/offshore-yuan-dip-looks-like-a-liquidity-blip-not-a-trend-shift-93CH-5039801",
+  "https://investinglive.com/forex/euro-breaks-below-1-10-as-french-election-risk-builds-three-banks-see-1-08-next/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -647,7 +648,7 @@
  ],
  "last_heartbeat": "2026-11-19",
  "last_run": {
-  "shock": "2026-11-19T23:05:18.047414+00:00",
+  "shock": "2026-11-19T23:10:19.807200+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1256,16 +1257,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09711,
-   "2026-11-19T23:04:00+00:00"
+   1.09683,
+   "2026-11-19T23:08:00+00:00"
   ],
   "USD/JPY": [
-   159.57569,
-   "2026-11-19T23:04:00+00:00"
+   159.59808,
+   "2026-11-19T23:08:00+00:00"
   ],
   "EUR/JPY": [
-   175.07208525590002,
-   "2026-11-19T23:04:00+00:00"
+   175.0519620864,
+   "2026-11-19T23:08:00+00:00"
   ]
  },
  "tg_offset": 585038439,
