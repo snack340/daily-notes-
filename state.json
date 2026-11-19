@@ -267,26 +267,7 @@
   "USD|Unemployment Claims|2026-11-19T13:30:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "EUR ECB President Lagarde Speaks",
-   "t": "2026-11-19T13:30:00+00:00",
-   "high": false,
-   "fc": "n/a"
-  },
-  {
-   "title": "USD Philly Fed Manufacturing Index",
-   "t": "2026-11-19T13:30:00+00:00",
-   "high": false,
-   "fc": "20.6"
-  },
-  {
-   "title": "USD Unemployment Claims",
-   "t": "2026-11-19T13:30:00+00:00",
-   "high": false,
-   "fc": "198K"
-  }
- ],
+ "pending": [],
  "recent": [
   "Investing.com: Dollar extends surge on raised Fed rate hike expectations, hits over 19-month high",
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
@@ -530,6 +511,33 @@
      }
     },
     "fc": "n/a"
+   },
+   {
+    "date": "2026-11-19 13:30",
+    "pairs": {
+     "EUR/USD": {
+      "m5": 1.8,
+      "m30": 4.8,
+      "m60": 8.2,
+      "peak": 9.8,
+      "px": 1.10033
+     },
+     "USD/JPY": {
+      "m5": 0.3,
+      "m30": -6.9,
+      "m60": -11.5,
+      "peak": -11.5,
+      "px": 159.84593
+     },
+     "EUR/JPY": {
+      "m5": 3.2,
+      "m30": 0.1,
+      "m60": 0.4,
+      "peak": 10.9,
+      "px": 175.88327
+     }
+    },
+    "fc": "n/a"
    }
   ],
   "USD FOMC Meeting Minutes": [
@@ -560,6 +568,64 @@
     },
     "fc": "n/a"
    }
+  ],
+  "USD Philly Fed Manufacturing Index": [
+   {
+    "date": "2026-11-19 13:30",
+    "pairs": {
+     "EUR/USD": {
+      "m5": 1.8,
+      "m30": 4.8,
+      "m60": 8.2,
+      "peak": 9.8,
+      "px": 1.10033
+     },
+     "USD/JPY": {
+      "m5": 0.3,
+      "m30": -6.9,
+      "m60": -11.5,
+      "peak": -11.5,
+      "px": 159.84593
+     },
+     "EUR/JPY": {
+      "m5": 3.2,
+      "m30": 0.1,
+      "m60": 0.4,
+      "peak": 10.9,
+      "px": 175.88327
+     }
+    },
+    "fc": "20.6"
+   }
+  ],
+  "USD Unemployment Claims": [
+   {
+    "date": "2026-11-19 13:30",
+    "pairs": {
+     "EUR/USD": {
+      "m5": 1.8,
+      "m30": 4.8,
+      "m60": 8.2,
+      "peak": 9.8,
+      "px": 1.10033
+     },
+     "USD/JPY": {
+      "m5": 0.3,
+      "m30": -6.9,
+      "m60": -11.5,
+      "peak": -11.5,
+      "px": 159.84593
+     },
+     "EUR/JPY": {
+      "m5": 3.2,
+      "m30": 0.1,
+      "m60": 0.4,
+      "peak": 10.9,
+      "px": 175.88327
+     }
+    },
+    "fc": "198K"
+   }
   ]
  },
  "last_shock": {
@@ -576,7 +642,7 @@
  ],
  "last_heartbeat": "2026-11-19",
  "last_run": {
-  "shock": "2026-11-19T14:30:30.302652+00:00",
+  "shock": "2026-11-19T14:35:19.816010+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -619,7 +685,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-19T14:20:18.119207+00:00",
+  "at": "2026-11-19T14:35:19.536102+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1185,16 +1251,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09984,
-   "2026-11-19T14:28:00+00:00"
+   1.09998,
+   "2026-11-19T14:33:00+00:00"
   ],
   "USD/JPY": [
-   159.89416,
-   "2026-11-19T14:28:00+00:00"
+   159.87486,
+   "2026-11-19T14:33:00+00:00"
   ],
   "EUR/JPY": [
-   175.8579929344,
-   "2026-11-19T14:28:00+00:00"
+   175.8591485028,
+   "2026-11-19T14:33:00+00:00"
   ]
  },
  "tg_offset": 585038439,
