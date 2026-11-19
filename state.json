@@ -237,7 +237,8 @@
   "https://www.investing.com/news/forex-news/sterling-today-pound-slips-as-us-rate-bets-outweigh-uk-cpi-rise-to-36-5035366",
   "https://www.investing.com/news/forex-news/gbpusd-slide-driven-by-dollar-strength-not-sterling-weakness-93CH-5036710",
   "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm",
-  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+  "http://www.boj.or.jp/en/mopo/diet/d_state/dst261119a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -259,7 +260,6 @@
  "alerted": [],
  "pending": [],
  "recent": [
-  "BoJ: (Reference) Outlook Report and Indicators Related to Underlying Inflation",
   "BoJ: Indicators for Core CPI",
   "Investing.com: Dollar extends surge on raised Fed rate hike expectations, hits over 19-month high",
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
@@ -268,7 +268,8 @@
   "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
-  "Fed: Minutes of the Federal Open Market Committee, October 27-28, 2026"
+  "Fed: Minutes of the Federal Open Market Committee, October 27-28, 2026",
+  "BoJ: Statement by Governor UEDA concerning the Bank's Semiannual Report on Currency and Monetary Control (Committee on Financial Affairs, Senate)"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -547,13 +548,13 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-19T01:10:18.692007+00:00",
+  "shock": "2026-11-19T01:15:19.602234+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-18T21:25:32.954611+00:00",
-   "critical"
+   "2026-11-19T01:15:20.253682+00:00",
+   "normal"
   ]
  ],
  "titles": [
@@ -584,7 +585,8 @@
   "japanese yen tests 160 again drawing intervention threats",
   "asia fx yen intervention in focus as rate hike bets put dollar near 19 mth high",
   "speech by board member takata at a meeting held by the tokushima association of corporate executives economic activity prices and monetary policy in japan japan s money and capital market transformation will a paradigm shift occur",
-  "minutes of the federal open market committee october 27 28 2026"
+  "minutes of the federal open market committee october 27 28 2026",
+  "statement by governor ueda concerning the bank s semiannual report on currency and monetary control committee on financial affairs senate"
  ],
  "held": 0,
  "cal": {
@@ -1154,16 +1156,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09777,
-   "2026-11-19T01:08:00+00:00"
+   1.09758,
+   "2026-11-19T01:13:00+00:00"
   ],
   "USD/JPY": [
-   159.40621,
-   "2026-11-19T01:08:00+00:00"
+   159.43878,
+   "2026-11-19T01:13:00+00:00"
   ],
   "EUR/JPY": [
-   174.99135515169996,
-   "2026-11-19T01:08:00+00:00"
+   174.99681615240002,
+   "2026-11-19T01:13:00+00:00"
   ]
  },
  "tg_offset": 585038439,
