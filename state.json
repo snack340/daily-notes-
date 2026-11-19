@@ -248,7 +248,8 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
   "https://www.investing.com/news/forex-news/brazilian-real-near-52week-lows-as-fiscal-concerns-weigh-on-currency-93CH-5039497",
   "https://www.investing.com/news/forex-news/mexican-peso-falls-to-52week-low-as-banxicofed-rate-gap-narrows-93CH-5039488",
-  "https://www.investing.com/news/forex-news/dollar-index-hits-52week-high-driven-by-haven-demand-and-rate-expectations-93CH-5039556"
+  "https://www.investing.com/news/forex-news/dollar-index-hits-52week-high-driven-by-haven-demand-and-rate-expectations-93CH-5039556",
+  "https://www.investing.com/news/forex-news/offshore-yuan-dip-looks-like-a-liquidity-blip-not-a-trend-shift-93CH-5039801"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -646,7 +647,7 @@
  ],
  "last_heartbeat": "2026-11-19",
  "last_run": {
-  "shock": "2026-11-19T19:45:18.827362+00:00",
+  "shock": "2026-11-19T19:50:23.497454+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -689,7 +690,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-19T19:35:22.339446+00:00",
+  "at": "2026-11-19T19:50:23.460493+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1255,16 +1256,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.0976,
-   "2026-11-19T19:43:00+00:00"
+   1.09758,
+   "2026-11-19T19:48:00+00:00"
   ],
   "USD/JPY": [
-   159.76227,
-   "2026-11-19T19:43:00+00:00"
+   159.77995,
+   "2026-11-19T19:48:00+00:00"
   ],
   "EUR/JPY": [
-   175.35506755199998,
-   "2026-11-19T19:43:00+00:00"
+   175.37127752100002,
+   "2026-11-19T19:48:00+00:00"
   ]
  },
  "tg_offset": 585038439,
