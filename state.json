@@ -239,7 +239,8 @@
   "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
   "http://www.boj.or.jp/en/mopo/diet/d_state/dst261119a.htm",
-  "https://www.boj.or.jp/en/mopo/diet/d_state/dst261119a.htm"
+  "https://www.boj.or.jp/en/mopo/diet/d_state/dst261119a.htm",
+  "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -549,7 +550,7 @@
  ],
  "last_heartbeat": "2026-11-18",
  "last_run": {
-  "shock": "2026-11-19T04:25:25.223082+00:00",
+  "shock": "2026-11-19T04:30:18.112387+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1157,16 +1158,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09627,
-   "2026-11-19T04:23:00+00:00"
+   1.09629,
+   "2026-11-19T04:28:00+00:00"
   ],
   "USD/JPY": [
-   159.5967,
-   "2026-11-19T04:23:00+00:00"
+   159.58221,
+   "2026-11-19T04:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.961074309,
-   "2026-11-19T04:23:00+00:00"
+   174.9483810009,
+   "2026-11-19T04:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
