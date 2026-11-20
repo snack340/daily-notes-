@@ -279,14 +279,7 @@
   "EUR|ECB President Lagarde Speaks|2026-11-20T08:15:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "EUR ECB President Lagarde Speaks",
-   "t": "2026-11-20T08:15:00+00:00",
-   "high": false,
-   "fc": "n/a"
-  }
- ],
+ "pending": [],
  "recent": [
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
@@ -557,6 +550,33 @@
      }
     },
     "fc": "n/a"
+   },
+   {
+    "date": "2026-11-20 08:15",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -1.6,
+      "m30": -7.9,
+      "m60": -10.2,
+      "peak": -13.0,
+      "px": 1.09666
+     },
+     "USD/JPY": {
+      "m5": -5.4,
+      "m30": -11.3,
+      "m60": -18.4,
+      "peak": -23.5,
+      "px": 158.9873
+     },
+     "EUR/JPY": {
+      "m5": -8.5,
+      "m30": -25.0,
+      "m60": -36.4,
+      "peak": -44.0,
+      "px": 174.35501
+     }
+    },
+    "fc": "n/a"
    }
   ],
   "USD FOMC Meeting Minutes": [
@@ -661,7 +681,7 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T09:15:16.651947+00:00",
+  "shock": "2026-11-20T09:20:18.282001+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1275,16 +1295,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09655,
-   "2026-11-20T09:13:00+00:00"
+   1.09666,
+   "2026-11-20T09:18:00+00:00"
   ],
   "USD/JPY": [
-   158.93638,
-   "2026-11-20T09:13:00+00:00"
+   159.07011,
+   "2026-11-20T09:18:00+00:00"
   ],
   "EUR/JPY": [
-   174.281687489,
-   "2026-11-20T09:13:00+00:00"
+   174.4458268326,
+   "2026-11-20T09:18:00+00:00"
   ]
  },
  "tg_offset": 585038439,
