@@ -259,7 +259,8 @@
   "https://www.investing.com/news/forex-news/sterling-today-pound-edges-up-on-uk-retail-beat-dollar-caps-gains-5041015",
   "https://www.investing.com/news/forex-news/ubs-flags-further-euro-downside-as-dollar-strength-keeps-eurusd-under-pressure-5041144",
   "https://www.investing.com/news/forex-news/ubs-sees-sterling-rebound-later-in-2027-as-fed-rate-cuts-approach-5041141",
-  "https://www.federalreserve.gov/newsevents/speech/waller20261120a.htm"
+  "https://www.federalreserve.gov/newsevents/speech/waller20261120a.htm",
+  "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -700,7 +701,7 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T14:55:19.343865+00:00",
+  "shock": "2026-11-20T15:00:22.911118+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1318,16 +1319,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09867,
-   "2026-11-20T14:53:00+00:00"
+   1.09807,
+   "2026-11-20T14:58:00+00:00"
   ],
   "USD/JPY": [
-   158.79947,
-   "2026-11-20T14:53:00+00:00"
+   158.89044,
+   "2026-11-20T14:58:00+00:00"
   ],
   "EUR/JPY": [
-   174.46821370490002,
-   "2026-11-20T14:53:00+00:00"
+   174.47282545080003,
+   "2026-11-20T14:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
