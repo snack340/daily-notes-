@@ -254,7 +254,8 @@
   "http://www.boj.or.jp/en/research/imes/mes/mes26.htm",
   "https://www.boj.or.jp/en/research/imes/mes/mes26.htm",
   "https://www.investing.com/news/forex-news/asia-fx-struggles-as-dollar-holds-near-19mth-high-aussie-hits-11month-low-5040667",
-  "https://www.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5040733"
+  "https://www.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5040733",
+  "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -287,7 +288,6 @@
   }
  ],
  "recent": [
-  "Investing.com: Dollar extends surge on raised Fed rate hike expectations, hits over 19-month high",
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
   "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger",
@@ -296,7 +296,8 @@
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
   "Fed: Minutes of the Federal Open Market Committee, October 27-28, 2026",
   "BoJ: Statement by Governor UEDA concerning the Bank's Semiannual Report on Currency and Monetary Control (Committee on Financial Affairs, Senate)",
-  "Fed speeches: Jefferson, Monetary Policy amid Frequent and Complex Shocks"
+  "Fed speeches: Jefferson, Monetary Policy amid Frequent and Complex Shocks",
+  "ECB: Christine Lagarde: Acting in time"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -660,12 +661,16 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T08:30:17.583942+00:00",
+  "shock": "2026-11-20T08:35:17.115586+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
    "2026-11-20T07:45:21.364383+00:00",
+   "normal"
+  ],
+  [
+   "2026-11-20T08:35:18.129430+00:00",
    "normal"
   ]
  ],
@@ -699,11 +704,12 @@
   "speech by board member takata at a meeting held by the tokushima association of corporate executives economic activity prices and monetary policy in japan japan s money and capital market transformation will a paradigm shift occur",
   "minutes of the federal open market committee october 27 28 2026",
   "statement by governor ueda concerning the bank s semiannual report on currency and monetary control committee on financial affairs senate",
-  "jefferson monetary policy amid frequent and complex shocks"
+  "jefferson monetary policy amid frequent and complex shocks",
+  "christine lagarde acting in time"
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-20T08:15:17.981314+00:00",
+  "at": "2026-11-20T08:35:17.097575+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1269,16 +1275,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09773,
-   "2026-11-20T08:28:00+00:00"
+   1.09746,
+   "2026-11-20T08:33:00+00:00"
   ],
   "USD/JPY": [
-   159.06984,
-   "2026-11-20T08:28:00+00:00"
+   159.08552,
+   "2026-11-20T08:33:00+00:00"
   ],
   "EUR/JPY": [
-   174.61573546320002,
-   "2026-11-20T08:28:00+00:00"
+   174.58999477920003,
+   "2026-11-20T08:33:00+00:00"
   ]
  },
  "tg_offset": 585038439,
