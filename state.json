@@ -261,7 +261,8 @@
   "https://www.investing.com/news/forex-news/ubs-sees-sterling-rebound-later-in-2027-as-fed-rate-cuts-approach-5041141",
   "https://www.federalreserve.gov/newsevents/speech/waller20261120a.htm",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
-  "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
+  "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm",
+  "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -777,7 +778,7 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T21:10:17.372851+00:00",
+  "shock": "2026-11-20T21:15:22.622295+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1395,16 +1396,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09621,
-   "2026-11-20T21:08:00+00:00"
+   1.09631,
+   "2026-11-20T21:14:00+00:00"
   ],
   "USD/JPY": [
-   158.55491,
-   "2026-11-20T21:08:00+00:00"
+   158.57283,
+   "2026-11-20T21:14:00+00:00"
   ],
   "EUR/JPY": [
-   173.8094778911,
-   "2026-11-20T21:08:00+00:00"
+   173.8449792573,
+   "2026-11-20T21:14:00+00:00"
   ]
  },
  "tg_offset": 585038439,
