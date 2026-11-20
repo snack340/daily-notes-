@@ -255,7 +255,8 @@
   "https://www.boj.or.jp/en/research/imes/mes/mes26.htm",
   "https://www.investing.com/news/forex-news/asia-fx-struggles-as-dollar-holds-near-19mth-high-aussie-hits-11month-low-5040667",
   "https://www.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5040733",
-  "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html"
+  "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
+  "https://www.investing.com/news/forex-news/sterling-today-pound-edges-up-on-uk-retail-beat-dollar-caps-gains-5041015"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -681,7 +682,7 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T09:25:22.723286+00:00",
+  "shock": "2026-11-20T09:30:31.563881+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1295,16 +1296,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09691,
-   "2026-11-20T09:23:00+00:00"
+   1.09674,
+   "2026-11-20T09:29:00+00:00"
   ],
   "USD/JPY": [
-   159.09469,
-   "2026-11-20T09:23:00+00:00"
+   159.07082,
+   "2026-11-20T09:29:00+00:00"
   ],
   "EUR/JPY": [
-   174.51255640790004,
-   "2026-11-20T09:23:00+00:00"
+   174.4593311268,
+   "2026-11-20T09:29:00+00:00"
   ]
  },
  "tg_offset": 585038439,
