@@ -286,20 +286,7 @@
   "USD|Revised UoM Inflation Expectations|2026-11-20T15:00:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "USD Revised UoM Consumer Sentiment",
-   "t": "2026-11-20T15:00:00+00:00",
-   "high": false,
-   "fc": "51.7"
-  },
-  {
-   "title": "USD Revised UoM Inflation Expectations",
-   "t": "2026-11-20T15:00:00+00:00",
-   "high": false,
-   "fc": "n/a"
-  }
- ],
+ "pending": [],
  "recent": [
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
@@ -685,6 +672,64 @@
     },
     "fc": "198K"
    }
+  ],
+  "USD Revised UoM Consumer Sentiment": [
+   {
+    "date": "2026-11-20 15:00",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -0.1,
+      "m30": 2.7,
+      "m60": 2.3,
+      "peak": 17.4,
+      "px": 1.09822
+     },
+     "USD/JPY": {
+      "m5": -2.2,
+      "m30": -14.7,
+      "m60": -17.4,
+      "peak": -28.3,
+      "px": 158.72992
+     },
+     "EUR/JPY": {
+      "m5": -2.6,
+      "m30": -11.8,
+      "m60": -15.5,
+      "peak": -18.1,
+      "px": 174.32037
+     }
+    },
+    "fc": "51.7"
+   }
+  ],
+  "USD Revised UoM Inflation Expectations": [
+   {
+    "date": "2026-11-20 15:00",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -0.1,
+      "m30": 2.7,
+      "m60": 2.3,
+      "peak": 17.4,
+      "px": 1.09822
+     },
+     "USD/JPY": {
+      "m5": -2.2,
+      "m30": -14.7,
+      "m60": -17.4,
+      "peak": -28.3,
+      "px": 158.72992
+     },
+     "EUR/JPY": {
+      "m5": -2.6,
+      "m30": -11.8,
+      "m60": -15.5,
+      "peak": -18.1,
+      "px": 174.32037
+     }
+    },
+    "fc": "n/a"
+   }
   ]
  },
  "last_shock": {
@@ -701,7 +746,7 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T16:00:18.449643+00:00",
+  "shock": "2026-11-20T16:05:21.495458+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1319,16 +1364,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09847,
-   "2026-11-20T15:58:00+00:00"
+   1.09803,
+   "2026-11-20T16:03:00+00:00"
   ],
   "USD/JPY": [
-   158.73882,
-   "2026-11-20T15:58:00+00:00"
+   158.72682,
+   "2026-11-20T16:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.3698316054,
-   "2026-11-20T15:58:00+00:00"
+   174.2868101646,
+   "2026-11-20T16:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
