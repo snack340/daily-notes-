@@ -288,14 +288,7 @@
   "USD|President Trump Speaks|2026-11-20T17:00:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "USD President Trump Speaks",
-   "t": "2026-11-20T17:00:00+00:00",
-   "high": false,
-   "fc": "n/a"
-  }
- ],
+ "pending": [],
  "recent": [
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
@@ -739,6 +732,35 @@
     },
     "fc": "n/a"
    }
+  ],
+  "USD President Trump Speaks": [
+   {
+    "date": "2026-11-20 17:00",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -1.1,
+      "m30": -0.7,
+      "m60": -7.0,
+      "peak": -8.4,
+      "px": 1.09734
+     },
+     "USD/JPY": {
+      "m5": -3.1,
+      "m30": -3.7,
+      "m60": 1.7,
+      "peak": -7.9,
+      "px": 158.76392
+     },
+     "EUR/JPY": {
+      "m5": -5.2,
+      "m30": -5.1,
+      "m60": -9.3,
+      "peak": -13.1,
+      "px": 174.218
+     }
+    },
+    "fc": "n/a"
+   }
   ]
  },
  "last_shock": {
@@ -755,7 +777,7 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T18:00:24.890561+00:00",
+  "shock": "2026-11-20T18:05:18.962518+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -799,7 +821,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-20T17:45:27.285622+00:00",
+  "at": "2026-11-20T18:05:18.633791+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1373,16 +1395,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.0972,
-   "2026-11-20T17:59:00+00:00"
+   1.09732,
+   "2026-11-20T18:03:00+00:00"
   ],
   "USD/JPY": [
-   158.77882,
-   "2026-11-20T17:59:00+00:00"
+   158.73103,
+   "2026-11-20T18:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.212121304,
-   "2026-11-20T17:59:00+00:00"
+   174.17873383960003,
+   "2026-11-20T18:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
