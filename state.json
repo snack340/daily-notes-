@@ -283,10 +283,18 @@
   "USD|Unemployment Claims|2026-11-19T13:30:00+00:00",
   "EUR|ECB President Lagarde Speaks|2026-11-20T08:15:00+00:00",
   "USD|Revised UoM Consumer Sentiment|2026-11-20T15:00:00+00:00",
-  "USD|Revised UoM Inflation Expectations|2026-11-20T15:00:00+00:00"
+  "USD|Revised UoM Inflation Expectations|2026-11-20T15:00:00+00:00",
+  "USD|President Trump Speaks|2026-11-20T17:00:00+00:00"
  ],
  "alerted": [],
- "pending": [],
+ "pending": [
+  {
+   "title": "USD President Trump Speaks",
+   "t": "2026-11-20T17:00:00+00:00",
+   "high": false,
+   "fc": "n/a"
+  }
+ ],
  "recent": [
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
@@ -746,12 +754,12 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T16:25:20.210406+00:00",
+  "shock": "2026-11-20T16:30:18.592362+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-20T14:30:32.143595+00:00",
+   "2026-11-20T16:30:18.255339+00:00",
    "normal"
   ]
  ],
@@ -1364,16 +1372,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09852,
-   "2026-11-20T16:23:00+00:00"
+   1.09816,
+   "2026-11-20T16:28:00+00:00"
   ],
   "USD/JPY": [
-   158.73203,
-   "2026-11-20T16:23:00+00:00"
+   158.73175,
+   "2026-11-20T16:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.3703095956,
-   "2026-11-20T16:23:00+00:00"
+   174.31285858,
+   "2026-11-20T16:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
