@@ -258,7 +258,8 @@
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
   "https://www.investing.com/news/forex-news/sterling-today-pound-edges-up-on-uk-retail-beat-dollar-caps-gains-5041015",
   "https://www.investing.com/news/forex-news/ubs-flags-further-euro-downside-as-dollar-strength-keeps-eurusd-under-pressure-5041144",
-  "https://www.investing.com/news/forex-news/ubs-sees-sterling-rebound-later-in-2027-as-fed-rate-cuts-approach-5041141"
+  "https://www.investing.com/news/forex-news/ubs-sees-sterling-rebound-later-in-2027-as-fed-rate-cuts-approach-5041141",
+  "https://www.federalreserve.gov/newsevents/speech/waller20261120a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -684,7 +685,7 @@
  ],
  "last_heartbeat": "2026-11-20",
  "last_run": {
-  "shock": "2026-11-20T13:20:18.119533+00:00",
+  "shock": "2026-11-20T13:25:21.507727+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -732,7 +733,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-20T13:10:20.881724+00:00",
+  "at": "2026-11-20T13:25:21.345356+00:00",
   "raw": [
    {
     "title": "Prelim GDP Price Index y/y",
@@ -1298,16 +1299,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09932,
-   "2026-11-20T13:18:00+00:00"
+   1.09982,
+   "2026-11-20T13:23:00+00:00"
   ],
   "USD/JPY": [
-   158.70914,
-   "2026-11-20T13:18:00+00:00"
+   158.61511,
+   "2026-11-20T13:23:00+00:00"
   ],
   "EUR/JPY": [
-   174.4721317848,
-   "2026-11-20T13:18:00+00:00"
+   174.4480702802,
+   "2026-11-20T13:23:00+00:00"
   ]
  },
  "tg_offset": 585038439,
