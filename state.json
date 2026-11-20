@@ -251,7 +251,8 @@
   "https://www.investing.com/news/forex-news/dollar-index-hits-52week-high-driven-by-haven-demand-and-rate-expectations-93CH-5039556",
   "https://www.investing.com/news/forex-news/offshore-yuan-dip-looks-like-a-liquidity-blip-not-a-trend-shift-93CH-5039801",
   "https://investinglive.com/forex/euro-breaks-below-1-10-as-french-election-risk-builds-three-banks-see-1-08-next/",
-  "http://www.boj.or.jp/en/research/imes/mes/mes26.htm"
+  "http://www.boj.or.jp/en/research/imes/mes/mes26.htm",
+  "https://www.boj.or.jp/en/research/imes/mes/mes26.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -649,7 +650,7 @@
  ],
  "last_heartbeat": "2026-11-19",
  "last_run": {
-  "shock": "2026-11-20T03:05:17.045024+00:00",
+  "shock": "2026-11-20T03:10:22.423177+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1258,16 +1259,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09697,
-   "2026-11-20T03:03:00+00:00"
+   1.09705,
+   "2026-11-20T03:09:00+00:00"
   ],
   "USD/JPY": [
-   159.22627,
-   "2026-11-20T03:03:00+00:00"
+   159.17629,
+   "2026-11-20T03:09:00+00:00"
   ],
   "EUR/JPY": [
-   174.6664414019,
-   "2026-11-20T03:03:00+00:00"
+   174.6243489445,
+   "2026-11-20T03:09:00+00:00"
   ]
  },
  "tg_offset": 585038439,
