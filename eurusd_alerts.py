@@ -31,6 +31,7 @@ TG_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
 NTFY_TOPIC = (os.getenv("NTFY_TOPIC") or "").strip().strip("/") or None  # optional: send alerts to the free ntfy app INSTEAD of Telegram (blocked in Jordan)
 NTFY_URL = os.getenv("NTFY_URL", "https://ntfy.sh").rstrip("/")
+NTFY_TITLE = os.getenv("NTFY_TITLE", "FX Alerts")  # bold title shown on every ntfy notification
 TD_KEY = os.getenv("TWELVEDATA_API_KEY")   # prices (free plan: 800 calls/day)
 FH_KEY = os.getenv("FINNHUB_API_KEY")      # optional: actual vs forecast
 SHOCK_SIGMA = float(os.getenv("SHOCK_SIGMA", "3"))     # std devs a 5-min move must exceed
@@ -246,7 +247,8 @@ def ntfy(text, prio="default"):
         return False
     try:
         r = requests.post(f"{NTFY_URL}/{NTFY_TOPIC}", data=text.encode("utf-8")[:3900].decode("utf-8", "ignore").encode("utf-8"), timeout=20,
-                          headers={"Priority": "high" if prio == "critical" else "default"})
+                          headers={"Priority": "high" if prio == "critical" else "default",
+                                   "Title": NTFY_TITLE.encode("ascii", "ignore").decode() or "FX Alerts"})
         if r.ok:
             return True
         print("ntfy rejected:", r.status_code, r.text[:100])
@@ -319,6 +321,8 @@ def commands(st):
         words = text.strip().lower().split()
         cmd = words[0].split("@")[0] if words else ""
         if src == "ntfy" and cmd and not cmd.startswith("/"):
+            if cmd not in ("pause", "resume", "status", "help"):
+                continue  # e.g. the iPhone app's own test notification: ignore, don't reply
             cmd = "/" + cmd  # typing 'pause' in the ntfy app is enough
         if cmd == "/pause":
             try:
