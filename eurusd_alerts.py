@@ -13,6 +13,8 @@ continuously with `--loop` on a small server. Sends alerts to Telegram.
 Telegram commands (from your own chat only, picked up on the next run, so allow up to 5 min):
   /pause [hours]   stop alerts (default 2 hours, max 72)      /resume   turn them back on
   /status          what the bot is doing right now            /help     list the commands
+With NTFY_TOPIC set, alerts go to the free ntfy app instead of Telegram (Telegram is used only if ntfy
+fails), and commands can be published to the topic "<NTFY_TOPIC>-cmd" from the ntfy app.
 """
 import csv, json, os, re, statistics, sys, time
 import xml.etree.ElementTree as ET
@@ -27,6 +29,8 @@ except ImportError:  # very old Python
 
 TG_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID")
+NTFY_TOPIC = (os.getenv("NTFY_TOPIC") or "").strip().strip("/") or None  # optional: send alerts to the free ntfy app INSTEAD of Telegram (blocked in Jordan)
+NTFY_URL = os.getenv("NTFY_URL", "https://ntfy.sh").rstrip("/")
 TD_KEY = os.getenv("TWELVEDATA_API_KEY")   # prices (free plan: 800 calls/day)
 FH_KEY = os.getenv("FINNHUB_API_KEY")      # optional: actual vs forecast
 SHOCK_SIGMA = float(os.getenv("SHOCK_SIGMA", "3"))     # std devs a 5-min move must exceed
@@ -108,7 +112,7 @@ def load():
     for k, v in (("seen", []), ("reminded", []), ("alerted", []), ("pending", []),
                  ("recent", []), ("history", {}), ("last_shock", {}), ("feeds_init", []),
                  ("last_heartbeat", ""), ("last_run", {}), ("sent_log", []), ("titles", []), ("held", 0), ("cal", None), ("fails", {}), ("px", {}),
-                 ("tg_offset", 0), ("paused_until", ""), ("last_yen", "")):
+                 ("tg_offset", 0), ("paused_until", ""), ("last_yen", ""), ("ntfy_since", "")):
         st.setdefault(k, v)
     if not isinstance(st["last_shock"], dict):
         st["last_shock"] = {}
@@ -213,11 +217,14 @@ def send(text, prio="critical"):
             return
         st["sent_log"].append([n.isoformat(), prio])
     print(text, "\n")
-    tg(text)
+    tg(text, prio)
 
 
-def tg(text):
-    """Deliver one message to your Telegram chat (no caps: send() applies those)."""
+def tg(text, prio="default"):
+    """Deliver one message (no caps: send() applies those). With NTFY_TOPIC set it goes to ntfy ONLY,
+    and falls back to Telegram just for that message if ntfy fails, so you never get it twice."""
+    if NTFY_TOPIC and ntfy(text, prio):
+        return
     if not (TG_TOKEN and TG_CHAT):
         return
     for attempt in (1, 2):
@@ -231,6 +238,21 @@ def tg(text):
         except requests.RequestException as e:
             print("telegram error:", type(e).__name__)
         time.sleep(2)
+
+
+def ntfy(text, prio="default"):
+    """Push to the ntfy phone app. Free, no account; the private topic name lives in GitHub Secrets."""
+    if not NTFY_TOPIC:
+        return False
+    try:
+        r = requests.post(f"{NTFY_URL}/{NTFY_TOPIC}", data=text.encode("utf-8")[:3900].decode("utf-8", "ignore").encode("utf-8"), timeout=20,
+                          headers={"Priority": "high" if prio == "critical" else "default"})
+        if r.ok:
+            return True
+        print("ntfy rejected:", r.status_code, r.text[:100])
+    except requests.RequestException as e:
+        print("ntfy error:", type(e).__name__)
+    return False
 
 
 def paused(st):
@@ -256,24 +278,48 @@ def status_text(st):
     return "\n".join(lines)
 
 
+def incoming(st):
+    """Command texts sent in the last 30 min: from your Telegram chat and from the ntfy '<topic>-cmd' topic."""
+    out = []
+    if TG_TOKEN and TG_CHAT:
+        r = requests.get(f"https://api.telegram.org/bot{TG_TOKEN}/getUpdates",
+                         params={"offset": st["tg_offset"], "timeout": 0, "allowed_updates": '["message"]'},
+                         timeout=20).json()
+        if not r.get("ok"):
+            raise RuntimeError("Telegram getUpdates: " + str(r.get("description"))[:100])
+        for u in r["result"]:
+            st["tg_offset"] = u["update_id"] + 1
+            m = u.get("message") or {}
+            if str((m.get("chat") or {}).get("id")) != str(TG_CHAT):
+                continue  # someone else messaged the bot: ignore
+            if now().timestamp() - m.get("date", 0) <= 1800:
+                out.append(("tg", m.get("text") or ""))
+    if NTFY_TOPIC:
+        try:
+            r = requests.get(f"{NTFY_URL}/{NTFY_TOPIC}-cmd/json",
+                             params={"poll": "1", "since": st["ntfy_since"] or "30m"}, timeout=20)
+            for line in r.text.splitlines() if r.ok else []:
+                try:
+                    m = json.loads(line)
+                except ValueError:
+                    continue
+                if m.get("event") == "message":
+                    st["ntfy_since"] = m.get("id", st["ntfy_since"])
+                    if now().timestamp() - m.get("time", 0) <= 1800:
+                        out.append(("ntfy", m.get("message") or ""))
+        except requests.RequestException as e:
+            print("ntfy commands error:", type(e).__name__)
+    return out
+
+
 def commands(st):
-    """Telegram commands, accepted from YOUR chat only: /pause [hours], /resume, /status, /help."""
-    if not (TG_TOKEN and TG_CHAT):
-        return
-    r = requests.get(f"https://api.telegram.org/bot{TG_TOKEN}/getUpdates",
-                     params={"offset": st["tg_offset"], "timeout": 0, "allowed_updates": '["message"]'},
-                     timeout=20).json()
-    if not r.get("ok"):
-        raise RuntimeError("Telegram getUpdates: " + str(r.get("description"))[:100])
-    for u in r["result"]:
-        st["tg_offset"] = u["update_id"] + 1
-        m = u.get("message") or {}
-        if str((m.get("chat") or {}).get("id")) != str(TG_CHAT):
-            continue  # someone else messaged the bot: ignore
-        if now().timestamp() - m.get("date", 0) > 1800:
-            continue  # too old to act on
-        words = (m.get("text") or "").strip().lower().split()
+    """Commands: /pause [hours], /resume, /status, /help. Send them in Telegram, or publish them to the
+    ntfy topic '<your topic>-cmd' (the slash is optional there)."""
+    for src, text in incoming(st):
+        words = text.strip().lower().split()
         cmd = words[0].split("@")[0] if words else ""
+        if src == "ntfy" and cmd and not cmd.startswith("/"):
+            cmd = "/" + cmd  # typing 'pause' in the ntfy app is enough
         if cmd == "/pause":
             try:
                 hours = min(max(float(words[1]), 0.25), 72)
@@ -869,6 +915,14 @@ def check():
         ok("Treasury yields: " + yields(strict=True))
     except Exception as e:
         bad(f"Treasury yields: {e if isinstance(e, RuntimeError) else type(e).__name__} (daily message will just leave them out)")
+    if NTFY_TOPIC:
+        try:
+            r = requests.post(f"{NTFY_URL}/{NTFY_TOPIC}", data="✅ Test message from your bot (ntfy)".encode("utf-8"), timeout=20)
+            (ok if r.ok else bad)("ntfy test message " + ("sent" if r.ok else f"rejected: {r.status_code} {r.text[:80]}"))
+        except Exception as e:
+            bad("ntfy: " + type(e).__name__)
+    else:
+        print("MISSING NTFY_TOPIC (optional: push alerts to the ntfy app)")
     if TG_TOKEN and TG_CHAT:
         try:
             g = requests.get(f"https://api.telegram.org/bot{TG_TOKEN}/getUpdates", params={"limit": 1, "timeout": 0}, timeout=20).json()
@@ -876,12 +930,15 @@ def check():
                                          + ("reachable" if g.get("ok") else str(g.get("description"))[:80]))
         except Exception as e:
             bad("Telegram commands: " + type(e).__name__)
-        try:
-            r = requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
-                              json={"chat_id": TG_CHAT, "text": "✅ Test message from your bot"}, timeout=20)
-            (ok if r.ok else bad)("Telegram test message " + ("sent" if r.ok else f"rejected: {r.status_code} {r.text[:80]}"))
-        except Exception as e:
-            bad("Telegram: " + type(e).__name__)
+        if NTFY_TOPIC:
+            print("info  Telegram alerts are off while NTFY_TOPIC is set (used only if ntfy fails)")
+        else:
+            try:
+                r = requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
+                                  json={"chat_id": TG_CHAT, "text": "✅ Test message from your bot"}, timeout=20)
+                (ok if r.ok else bad)("Telegram test message " + ("sent" if r.ok else f"rejected: {r.status_code} {r.text[:80]}"))
+            except Exception as e:
+                bad("Telegram: " + type(e).__name__)
 
 
 def demo():
