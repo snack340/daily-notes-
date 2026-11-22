@@ -826,7 +826,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-22T15:10:18.671439+00:00",
+  "at": "2026-11-22T15:30:18.302386+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1244,7 +1244,7 @@
   "shock": 0,
   "headlines": 0,
   "heartbeat": 0,
-  "commands": 0
+  "commands": 1
  },
  "px": {
   "EUR/USD": [
