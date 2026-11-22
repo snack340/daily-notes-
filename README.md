@@ -101,3 +101,13 @@ Send these to the bot from your own chat. Messages from anyone else are ignored.
 - Headlines older than 12 hours are logged but not sent (`HEADLINE_MAX_AGE_H`).
 - The timer is a free Cloudflare Worker (alert-timer) that starts the workflow every 5 minutes, because GitHub's own schedule skips runs.
 - BLS and FXStreet were removed because they block GitHub's servers.
+
+## ntfy alerts (Telegram is blocked in Jordan since 16 Nov 2026)
+With the `NTFY_TOPIC` secret set, alerts go to the free ntfy app instead of Telegram, so you never get the same alert twice. Telegram is used only for a message that ntfy fails to deliver. Delete the secret to go back to Telegram only.
+1. Install ntfy from the App Store or Play Store.
+2. Pick a long, random topic name. Anyone who knows it can read your alerts, so treat it like a password.
+3. In the app, subscribe to that topic. To use commands, also subscribe to the same name with `-cmd` on the end.
+4. Add the name as the GitHub secret `NTFY_TOPIC`.
+5. Run the check workflow. A "Test message from your bot (ntfy)" notification confirms it works.
+
+Commands in ntfy: publish `pause`, `pause 3`, `resume` or `status` to the `-cmd` topic. The reply arrives in your main topic within 5 minutes. Important alerts are sent as high priority.
