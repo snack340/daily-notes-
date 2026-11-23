@@ -291,7 +291,9 @@
   "USD|Revised UoM Inflation Expectations|2026-11-20T15:00:00+00:00",
   "USD|President Trump Speaks|2026-11-20T17:00:00+00:00",
   "EUR|French Flash Manufacturing PMI|2026-11-23T08:15:00+00:00",
-  "EUR|French Flash Services PMI|2026-11-23T08:15:00+00:00"
+  "EUR|French Flash Services PMI|2026-11-23T08:15:00+00:00",
+  "EUR|German Flash Manufacturing PMI|2026-11-23T08:30:00+00:00",
+  "EUR|German Flash Services PMI|2026-11-23T08:30:00+00:00"
  ],
  "alerted": [],
  "pending": [
@@ -306,6 +308,18 @@
    "t": "2026-11-23T08:15:00+00:00",
    "high": false,
    "fc": "47.4"
+  },
+  {
+   "title": "EUR German Flash Manufacturing PMI",
+   "t": "2026-11-23T08:30:00+00:00",
+   "high": false,
+   "fc": "54.1"
+  },
+  {
+   "title": "EUR German Flash Services PMI",
+   "t": "2026-11-23T08:30:00+00:00",
+   "high": false,
+   "fc": "52.4"
   }
  ],
  "recent": [
@@ -798,12 +812,16 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T07:55:18.503295+00:00",
+  "shock": "2026-11-23T08:00:20.463638+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
    "2026-11-23T07:45:19.980120+00:00",
+   "normal"
+  ],
+  [
+   "2026-11-23T08:00:20.242294+00:00",
    "normal"
   ]
  ],
@@ -1264,16 +1282,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.10035,
-   "2026-11-23T07:54:00+00:00"
+   1.09974,
+   "2026-11-23T07:58:00+00:00"
   ],
   "USD/JPY": [
-   158.95398,
-   "2026-11-23T07:54:00+00:00"
+   158.99137,
+   "2026-11-23T07:58:00+00:00"
   ],
   "EUR/JPY": [
-   174.905011893,
-   "2026-11-23T07:54:00+00:00"
+   174.8491692438,
+   "2026-11-23T07:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
