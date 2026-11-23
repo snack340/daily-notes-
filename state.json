@@ -269,7 +269,9 @@
   "https://www.investing.com/news/forex-news/global-bond-yields-grip-multiweek-lows-amid-pandemicscale-tech-rout-5044403",
   "https://www.investing.com/news/forex-news/sterling-today-pound-firms-as-equity-rebound-trims-dollar-bid-5044762",
   "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
-  "https://investinglive.com/forex/market-outlook-for-the-week-of-23rd-27th-november/"
+  "https://investinglive.com/forex/market-outlook-for-the-week-of-23rd-27th-november/",
+  "https://www.investing.com/news/forex-news/canadian-dollar-steadies-near-19month-low-as-oil-weakness-and-rate-gap-weigh-5045295",
+  "https://www.investing.com/news/forex-news/ubs-downgrades-new-zealand-dollar-on-weak-domestic-outlook-93CH-5045178"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -907,7 +909,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T12:25:17.575262+00:00",
+  "shock": "2026-11-23T12:30:19.107572+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1377,16 +1379,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09622,
-   "2026-11-23T12:23:00+00:00"
+   1.09632,
+   "2026-11-23T12:28:00+00:00"
   ],
   "USD/JPY": [
-   158.98021,
-   "2026-11-23T12:23:00+00:00"
+   158.9528,
+   "2026-11-23T12:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.27728580619998,
-   "2026-11-23T12:23:00+00:00"
+   174.26313369599998,
+   "2026-11-23T12:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
