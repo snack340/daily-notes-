@@ -297,20 +297,7 @@
   "EUR|German Flash Services PMI|2026-11-23T08:30:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "EUR German Flash Manufacturing PMI",
-   "t": "2026-11-23T08:30:00+00:00",
-   "high": false,
-   "fc": "54.1"
-  },
-  {
-   "title": "EUR German Flash Services PMI",
-   "t": "2026-11-23T08:30:00+00:00",
-   "high": false,
-   "fc": "52.4"
-  }
- ],
+ "pending": [],
  "recent": [
   "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
@@ -843,6 +830,64 @@
     },
     "fc": "47.4"
    }
+  ],
+  "EUR German Flash Manufacturing PMI": [
+   {
+    "date": "2026-11-23 08:30",
+    "pairs": {
+     "EUR/USD": {
+      "m5": 4.8,
+      "m30": -0.5,
+      "m60": -6.8,
+      "peak": 10.3,
+      "px": 1.09839
+     },
+     "USD/JPY": {
+      "m5": 1.5,
+      "m30": 8.5,
+      "m60": 10.1,
+      "peak": 11.6,
+      "px": 159.17357
+     },
+     "EUR/JPY": {
+      "m5": 9.3,
+      "m30": 8.5,
+      "m60": 0.3,
+      "peak": 22.2,
+      "px": 174.83466
+     }
+    },
+    "fc": "54.1"
+   }
+  ],
+  "EUR German Flash Services PMI": [
+   {
+    "date": "2026-11-23 08:30",
+    "pairs": {
+     "EUR/USD": {
+      "m5": 4.8,
+      "m30": -0.5,
+      "m60": -6.8,
+      "peak": 10.3,
+      "px": 1.09839
+     },
+     "USD/JPY": {
+      "m5": 1.5,
+      "m30": 8.5,
+      "m60": 10.1,
+      "peak": 11.6,
+      "px": 159.17357
+     },
+     "EUR/JPY": {
+      "m5": 9.3,
+      "m30": 8.5,
+      "m60": 0.3,
+      "peak": 22.2,
+      "px": 174.83466
+     }
+    },
+    "fc": "52.4"
+   }
   ]
  },
  "last_shock": {
@@ -859,7 +904,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T09:30:19.290009+00:00",
+  "shock": "2026-11-23T09:35:16.557074+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1329,16 +1374,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.0984,
-   "2026-11-23T09:28:00+00:00"
+   1.09804,
+   "2026-11-23T09:33:00+00:00"
   ],
   "USD/JPY": [
-   159.16593,
-   "2026-11-23T09:28:00+00:00"
+   159.17802,
+   "2026-11-23T09:33:00+00:00"
   ],
   "EUR/JPY": [
-   174.827857512,
-   "2026-11-23T09:28:00+00:00"
+   174.78383308079998,
+   "2026-11-23T09:33:00+00:00"
   ]
  },
  "tg_offset": 585038439,
