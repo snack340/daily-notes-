@@ -307,20 +307,7 @@
   "USD|Flash Services PMI|2026-11-23T14:45:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "USD Flash Manufacturing PMI",
-   "t": "2026-11-23T14:45:00+00:00",
-   "high": false,
-   "fc": "54.5"
-  },
-  {
-   "title": "USD Flash Services PMI",
-   "t": "2026-11-23T14:45:00+00:00",
-   "high": false,
-   "fc": "55.6"
-  }
- ],
+ "pending": [],
  "recent": [
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
   "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger",
@@ -911,6 +898,64 @@
     },
     "fc": "52.4"
    }
+  ],
+  "USD Flash Manufacturing PMI": [
+   {
+    "date": "2026-11-23 14:45",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -0.3,
+      "m30": -24.1,
+      "m60": -20.2,
+      "peak": -27.5,
+      "px": 1.09149
+     },
+     "USD/JPY": {
+      "m5": -2.0,
+      "m30": 4.8,
+      "m60": 0.5,
+      "peak": 8.3,
+      "px": 159.30899
+     },
+     "EUR/JPY": {
+      "m5": -2.7,
+      "m30": -33.1,
+      "m60": -31.7,
+      "peak": -42.0,
+      "px": 173.88417
+     }
+    },
+    "fc": "54.5"
+   }
+  ],
+  "USD Flash Services PMI": [
+   {
+    "date": "2026-11-23 14:45",
+    "pairs": {
+     "EUR/USD": {
+      "m5": -0.3,
+      "m30": -24.1,
+      "m60": -20.2,
+      "peak": -27.5,
+      "px": 1.09149
+     },
+     "USD/JPY": {
+      "m5": -2.0,
+      "m30": 4.8,
+      "m60": 0.5,
+      "peak": 8.3,
+      "px": 159.30899
+     },
+     "EUR/JPY": {
+      "m5": -2.7,
+      "m30": -33.1,
+      "m60": -31.7,
+      "peak": -42.0,
+      "px": 173.88417
+     }
+    },
+    "fc": "55.6"
+   }
   ]
  },
  "last_shock": {
@@ -928,7 +973,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T15:45:20.081224+00:00",
+  "shock": "2026-11-23T15:50:17.887208+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -985,7 +1030,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-23T15:30:30.114211+00:00",
+  "at": "2026-11-23T15:50:17.756801+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1407,16 +1452,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09167,
-   "2026-11-23T15:43:00+00:00"
+   1.091,
+   "2026-11-23T15:48:00+00:00"
   ],
   "USD/JPY": [
-   159.29191,
-   "2026-11-23T15:43:00+00:00"
+   159.32483,
+   "2026-11-23T15:48:00+00:00"
   ],
   "EUR/JPY": [
-   173.8941993897,
-   "2026-11-23T15:43:00+00:00"
+   173.82338953,
+   "2026-11-23T15:48:00+00:00"
   ]
  },
  "tg_offset": 585038439,
