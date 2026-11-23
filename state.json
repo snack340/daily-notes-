@@ -276,7 +276,9 @@
   "https://www.investing.com/news/forex-news/deutsche-bank-raises-dollar-forecasts-on-ai-boom-strength-93CH-5045584",
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
   "https://www.investing.com/news/forex-news/barclays-usdsek-tactical-long-still-attractive-after-a-10day-run-93CH-5046175",
-  "https://www.investing.com/news/forex-news/brazilian-real-stays-weak-despite-global-risk-rebound-fiscal-worries-weigh-93CH-5046167"
+  "https://www.investing.com/news/forex-news/brazilian-real-stays-weak-despite-global-risk-rebound-fiscal-worries-weigh-93CH-5046167",
+  "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271",
+  "https://www.investing.com/news/forex-news/indias-rupee-carry-trade-rbi-support-holds-but-risks-are-building-93CH-5046267"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -311,7 +313,6 @@
  "alerted": [],
  "pending": [],
  "recent": [
-  "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
   "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger",
   "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
@@ -320,7 +321,8 @@
   "BoJ: Statement by Governor UEDA concerning the Bank's Semiannual Report on Currency and Monetary Control (Committee on Financial Affairs, Senate)",
   "Fed speeches: Jefferson, Monetary Policy amid Frequent and Complex Shocks",
   "ECB: Christine Lagarde: Acting in time",
-  "ECB: Philip R. Lane: Climate change and monetary policy"
+  "ECB: Philip R. Lane: Climate change and monetary policy",
+  "Investing.com: Dollar index technical outlook: rally extended but overbought signals flash caution"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -975,24 +977,12 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T19:35:19.364992+00:00",
+  "shock": "2026-11-23T19:40:20.012666+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-23T13:55:18.233168+00:00",
-   "critical"
-  ],
-  [
-   "2026-11-23T14:00:22.904234+00:00",
-   "critical"
-  ],
-  [
-   "2026-11-23T14:15:22.782842+00:00",
-   "normal"
-  ],
-  [
-   "2026-11-23T14:35:27.622961+00:00",
+   "2026-11-23T19:40:21.583830+00:00",
    "critical"
   ]
  ],
@@ -1028,7 +1018,8 @@
   "statement by governor ueda concerning the bank s semiannual report on currency and monetary control committee on financial affairs senate",
   "jefferson monetary policy amid frequent and complex shocks",
   "christine lagarde acting in time",
-  "philip r lane climate change and monetary policy"
+  "philip r lane climate change and monetary policy",
+  "dollar index technical outlook rally extended but overbought signals flash caution"
  ],
  "held": 0,
  "cal": {
@@ -1454,16 +1445,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.08983,
-   "2026-11-23T19:33:00+00:00"
+   1.08965,
+   "2026-11-23T19:38:00+00:00"
   ],
   "USD/JPY": [
-   159.02475,
-   "2026-11-23T19:33:00+00:00"
+   158.97798,
+   "2026-11-23T19:38:00+00:00"
   ],
   "EUR/JPY": [
-   173.30994329250004,
-   "2026-11-23T19:33:00+00:00"
+   173.23035590700002,
+   "2026-11-23T19:38:00+00:00"
   ]
  },
  "tg_offset": 585038439,
