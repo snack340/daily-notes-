@@ -271,7 +271,9 @@
   "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
   "https://investinglive.com/forex/market-outlook-for-the-week-of-23rd-27th-november/",
   "https://www.investing.com/news/forex-news/canadian-dollar-steadies-near-19month-low-as-oil-weakness-and-rate-gap-weigh-5045295",
-  "https://www.investing.com/news/forex-news/ubs-downgrades-new-zealand-dollar-on-weak-domestic-outlook-93CH-5045178"
+  "https://www.investing.com/news/forex-news/ubs-downgrades-new-zealand-dollar-on-weak-domestic-outlook-93CH-5045178",
+  "https://www.investing.com/news/forex-news/usdjpy-to-return-to-the-140s-in-2027-deutsche-bank-93CH-5045587",
+  "https://www.investing.com/news/forex-news/deutsche-bank-raises-dollar-forecasts-on-ai-boom-strength-93CH-5045584"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -910,7 +912,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T13:25:29.644288+00:00",
+  "shock": "2026-11-23T13:30:24.658037+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -954,7 +956,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-23T13:15:17.911194+00:00",
+  "at": "2026-11-23T13:30:24.618933+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1376,16 +1378,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09455,
-   "2026-11-23T13:23:00+00:00"
+   1.09445,
+   "2026-11-23T13:29:00+00:00"
   ],
   "USD/JPY": [
-   159.04564,
-   "2026-11-23T13:23:00+00:00"
+   159.03812,
+   "2026-11-23T13:29:00+00:00"
   ],
   "EUR/JPY": [
-   174.08340526199999,
-   "2026-11-23T13:23:00+00:00"
+   174.05927043399998,
+   "2026-11-23T13:29:00+00:00"
   ]
  },
  "tg_offset": 585038439,
