@@ -267,7 +267,9 @@
   "https://www.investing.com/news/forex-news/bitcoin-rises-over-2-to-more-than-60000-5043497",
   "https://www.investing.com/news/forex-news/asia-fx-mixed-as-dollar-retreats-from-19month-high-yen-won-weaken-5044324",
   "https://www.investing.com/news/forex-news/global-bond-yields-grip-multiweek-lows-amid-pandemicscale-tech-rout-5044403",
-  "https://www.investing.com/news/forex-news/sterling-today-pound-firms-as-equity-rebound-trims-dollar-bid-5044762"
+  "https://www.investing.com/news/forex-news/sterling-today-pound-firms-as-equity-rebound-trims-dollar-bid-5044762",
+  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+  "https://investinglive.com/forex/market-outlook-for-the-week-of-23rd-27th-november/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -905,7 +907,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T10:00:32.158028+00:00",
+  "shock": "2026-11-23T10:05:18.807802+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1375,16 +1377,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09791,
-   "2026-11-23T09:58:00+00:00"
+   1.09757,
+   "2026-11-23T10:03:00+00:00"
   ],
   "USD/JPY": [
-   159.13267,
-   "2026-11-23T09:58:00+00:00"
+   159.11087,
+   "2026-11-23T10:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.71334971969998,
-   "2026-11-23T09:58:00+00:00"
+   174.6353175859,
+   "2026-11-23T10:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
