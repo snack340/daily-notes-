@@ -273,7 +273,8 @@
   "https://www.investing.com/news/forex-news/canadian-dollar-steadies-near-19month-low-as-oil-weakness-and-rate-gap-weigh-5045295",
   "https://www.investing.com/news/forex-news/ubs-downgrades-new-zealand-dollar-on-weak-domestic-outlook-93CH-5045178",
   "https://www.investing.com/news/forex-news/usdjpy-to-return-to-the-140s-in-2027-deutsche-bank-93CH-5045587",
-  "https://www.investing.com/news/forex-news/deutsche-bank-raises-dollar-forecasts-on-ai-boom-strength-93CH-5045584"
+  "https://www.investing.com/news/forex-news/deutsche-bank-raises-dollar-forecasts-on-ai-boom-strength-93CH-5045584",
+  "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -321,7 +322,6 @@
   }
  ],
  "recent": [
-  "investingLive: USD/JPY knocks on the door of 159.00 again, dollar bulls risk poking the intervention bear",
   "investingLive: US 2-year yields surge as the market realizes the US has an inflation problem",
   "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger",
   "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
@@ -330,7 +330,8 @@
   "Fed: Minutes of the Federal Open Market Committee, October 27-28, 2026",
   "BoJ: Statement by Governor UEDA concerning the Bank's Semiannual Report on Currency and Monetary Control (Committee on Financial Affairs, Senate)",
   "Fed speeches: Jefferson, Monetary Policy amid Frequent and Complex Shocks",
-  "ECB: Christine Lagarde: Acting in time"
+  "ECB: Christine Lagarde: Acting in time",
+  "ECB: Philip R. Lane: Climate change and monetary policy"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -927,7 +928,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-23T14:30:27.810459+00:00",
+  "shock": "2026-11-23T14:35:26.899367+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -942,6 +943,10 @@
   [
    "2026-11-23T14:15:22.782842+00:00",
    "normal"
+  ],
+  [
+   "2026-11-23T14:35:27.622961+00:00",
+   "critical"
   ]
  ],
  "titles": [
@@ -975,7 +980,8 @@
   "minutes of the federal open market committee october 27 28 2026",
   "statement by governor ueda concerning the bank s semiannual report on currency and monetary control committee on financial affairs senate",
   "jefferson monetary policy amid frequent and complex shocks",
-  "christine lagarde acting in time"
+  "christine lagarde acting in time",
+  "philip r lane climate change and monetary policy"
  ],
  "held": 0,
  "cal": {
@@ -1401,16 +1407,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09417,
-   "2026-11-23T14:28:00+00:00"
+   1.09392,
+   "2026-11-23T14:33:00+00:00"
   ],
   "USD/JPY": [
-   159.29835,
-   "2026-11-23T14:28:00+00:00"
+   159.38972,
+   "2026-11-23T14:33:00+00:00"
   ],
   "EUR/JPY": [
-   174.29947561950002,
-   "2026-11-23T14:28:00+00:00"
+   174.3596025024,
+   "2026-11-23T14:33:00+00:00"
   ]
  },
  "tg_offset": 585038439,
