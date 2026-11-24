@@ -282,7 +282,8 @@
   "https://investinglive.com/forex/the-nvidia-reversal-creates-a-fresh-scramble-for-dollars/",
   "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813",
   "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950",
-  "https://investinglive.com/forex/us-dollar-refuses-to-budge-despite-the-risk-on-bounce-so-what-s-keeping-it-so-strong/"
+  "https://investinglive.com/forex/us-dollar-refuses-to-budge-despite-the-risk-on-bounce-so-what-s-keeping-it-so-strong/",
+  "https://investinglive.com/forex/usd-jpy-flirts-with-danger-again-as-the-160-00-mark-puts-japan-intervention-risks-back-in-focus/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -317,7 +318,6 @@
  "alerted": [],
  "pending": [],
  "recent": [
-  "investingLive: Japan finance minister Katayama warns of decisive action as yen intervention risks linger",
   "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
@@ -326,7 +326,8 @@
   "Fed speeches: Jefferson, Monetary Policy amid Frequent and Complex Shocks",
   "ECB: Christine Lagarde: Acting in time",
   "ECB: Philip R. Lane: Climate change and monetary policy",
-  "Investing.com: Dollar index technical outlook: rally extended but overbought signals flash caution"
+  "Investing.com: Dollar index technical outlook: rally extended but overbought signals flash caution",
+  "investingLive: USD/JPY flirts with danger again as the 160.00 mark puts Japan intervention risks back in focus"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -981,12 +982,12 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-24T08:20:18.116489+00:00",
+  "shock": "2026-11-24T08:25:18.673788+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-24T06:00:21.165677+00:00",
+   "2026-11-24T08:25:20.405603+00:00",
    "critical"
   ]
  ],
@@ -1023,11 +1024,12 @@
   "jefferson monetary policy amid frequent and complex shocks",
   "christine lagarde acting in time",
   "philip r lane climate change and monetary policy",
-  "dollar index technical outlook rally extended but overbought signals flash caution"
+  "dollar index technical outlook rally extended but overbought signals flash caution",
+  "usd jpy flirts with danger again as the 160 00 mark puts japan intervention risks back in focus"
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-24T08:05:18.347406+00:00",
+  "at": "2026-11-24T08:25:18.666112+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1449,16 +1451,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09096,
-   "2026-11-24T08:18:00+00:00"
+   1.09105,
+   "2026-11-24T08:23:00+00:00"
   ],
   "USD/JPY": [
-   159.39221,
-   "2026-11-24T08:18:00+00:00"
+   159.39131,
+   "2026-11-24T08:23:00+00:00"
   ],
   "EUR/JPY": [
-   173.8905254216,
-   "2026-11-24T08:18:00+00:00"
+   173.9038887755,
+   "2026-11-24T08:23:00+00:00"
   ]
  },
  "tg_offset": 585038439,
