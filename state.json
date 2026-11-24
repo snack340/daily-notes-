@@ -284,7 +284,8 @@
   "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950",
   "https://investinglive.com/forex/us-dollar-refuses-to-budge-despite-the-risk-on-bounce-so-what-s-keeping-it-so-strong/",
   "https://investinglive.com/forex/usd-jpy-flirts-with-danger-again-as-the-160-00-mark-puts-japan-intervention-risks-back-in-focus/",
-  "https://www.investing.com/news/forex-news/global-yields-fall-as-safehaven-bid-meets-looming-us-pce-test-5047210"
+  "https://www.investing.com/news/forex-news/global-yields-fall-as-safehaven-bid-meets-looming-us-pce-test-5047210",
+  "https://www.investing.com/news/forex-news/sterling-today-pound-edges-higher-after-dollarled-slide-as-rally-risks-overshoot-5047426"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -983,7 +984,7 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-24T09:35:23.267685+00:00",
+  "shock": "2026-11-24T09:40:19.571676+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1030,7 +1031,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-24T09:25:18.211910+00:00",
+  "at": "2026-11-24T09:40:19.555142+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1452,16 +1453,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09219,
-   "2026-11-24T09:34:00+00:00"
+   1.09191,
+   "2026-11-24T09:38:00+00:00"
   ],
   "USD/JPY": [
-   159.35579,
-   "2026-11-24T09:34:00+00:00"
+   159.36401,
+   "2026-11-24T09:38:00+00:00"
   ],
   "EUR/JPY": [
-   174.0468002801,
-   "2026-11-24T09:34:00+00:00"
+   174.0111561591,
+   "2026-11-24T09:38:00+00:00"
   ]
  },
  "tg_offset": 585038439,
