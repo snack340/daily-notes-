@@ -281,7 +281,8 @@
   "https://www.investing.com/news/forex-news/indias-rupee-carry-trade-rbi-support-holds-but-risks-are-building-93CH-5046267",
   "https://investinglive.com/forex/the-nvidia-reversal-creates-a-fresh-scramble-for-dollars/",
   "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813",
-  "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950"
+  "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950",
+  "https://investinglive.com/forex/us-dollar-refuses-to-budge-despite-the-risk-on-bounce-so-what-s-keeping-it-so-strong/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -980,7 +981,7 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-24T06:25:18.513974+00:00",
+  "shock": "2026-11-24T06:30:27.164499+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1449,15 +1450,15 @@
  "px": {
   "EUR/USD": [
    1.09106,
-   "2026-11-24T06:24:00+00:00"
+   "2026-11-24T06:29:00+00:00"
   ],
   "USD/JPY": [
-   159.23422,
-   "2026-11-24T06:24:00+00:00"
+   159.26845,
+   "2026-11-24T06:29:00+00:00"
   ],
   "EUR/JPY": [
-   173.73408807319998,
-   "2026-11-24T06:24:00+00:00"
+   173.771435057,
+   "2026-11-24T06:29:00+00:00"
   ]
  },
  "tg_offset": 585038439,
