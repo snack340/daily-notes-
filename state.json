@@ -285,7 +285,10 @@
   "https://investinglive.com/forex/us-dollar-refuses-to-budge-despite-the-risk-on-bounce-so-what-s-keeping-it-so-strong/",
   "https://investinglive.com/forex/usd-jpy-flirts-with-danger-again-as-the-160-00-mark-puts-japan-intervention-risks-back-in-focus/",
   "https://www.investing.com/news/forex-news/global-yields-fall-as-safehaven-bid-meets-looming-us-pce-test-5047210",
-  "https://www.investing.com/news/forex-news/sterling-today-pound-edges-higher-after-dollarled-slide-as-rally-risks-overshoot-5047426"
+  "https://www.investing.com/news/forex-news/sterling-today-pound-edges-higher-after-dollarled-slide-as-rally-risks-overshoot-5047426",
+  "https://www.investing.com/news/forex-news/european-gas-bucks-energy-selloff-as-lingering-cold-snap-offsets-crude-slump-5047347",
+  "https://www.investing.com/news/forex-news/prolonged-ai-rout-threatens-usd-safehaven-status-strategist-warns-93CH-5047441",
+  "https://www.investing.com/news/forex-news/ubs-sees-usdjpy-at-158-through-2027-on-rate-differentials-93CH-5047434"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -970,7 +973,7 @@
   ]
  },
  "last_shock": {
-  "EUR/JPY": "2026-11-23T13:55:18.233087+00:00",
+  "EUR/JPY": "2026-11-24T10:00:21.935961+00:00",
   "USD/JPY": "2026-11-23T14:00:22.904036+00:00",
   "EUR/USD": "2026-11-23T13:55:18.232878+00:00"
  },
@@ -984,12 +987,12 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-24T09:55:18.187609+00:00",
+  "shock": "2026-11-24T10:00:21.626757+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-24T08:25:20.405603+00:00",
+   "2026-11-24T10:00:21.936069+00:00",
    "critical"
   ]
  ],
@@ -1031,7 +1034,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-24T09:40:19.555142+00:00",
+  "at": "2026-11-24T10:00:21.592900+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1453,16 +1456,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09279,
-   "2026-11-24T09:53:00+00:00"
+   1.09365,
+   "2026-11-24T09:58:00+00:00"
   ],
   "USD/JPY": [
-   159.44232,
-   "2026-11-24T09:53:00+00:00"
+   159.54789,
+   "2026-11-24T09:58:00+00:00"
   ],
   "EUR/JPY": [
-   174.23697287279998,
-   "2026-11-24T09:53:00+00:00"
+   174.4895498985,
+   "2026-11-24T09:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
