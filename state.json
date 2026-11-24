@@ -283,7 +283,8 @@
   "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813",
   "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950",
   "https://investinglive.com/forex/us-dollar-refuses-to-budge-despite-the-risk-on-bounce-so-what-s-keeping-it-so-strong/",
-  "https://investinglive.com/forex/usd-jpy-flirts-with-danger-again-as-the-160-00-mark-puts-japan-intervention-risks-back-in-focus/"
+  "https://investinglive.com/forex/usd-jpy-flirts-with-danger-again-as-the-160-00-mark-puts-japan-intervention-risks-back-in-focus/",
+  "https://www.investing.com/news/forex-news/global-yields-fall-as-safehaven-bid-meets-looming-us-pce-test-5047210"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -982,7 +983,7 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-24T09:15:27.219424+00:00",
+  "shock": "2026-11-24T09:20:18.720233+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1451,16 +1452,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09169,
-   "2026-11-24T09:13:00+00:00"
+   1.0918,
+   "2026-11-24T09:18:00+00:00"
   ],
   "USD/JPY": [
-   159.29472,
-   "2026-11-24T09:13:00+00:00"
+   159.34834,
+   "2026-11-24T09:18:00+00:00"
   ],
   "EUR/JPY": [
-   173.90045287680002,
-   "2026-11-24T09:13:00+00:00"
+   173.97651761200004,
+   "2026-11-24T09:18:00+00:00"
   ]
  },
  "tg_offset": 585038439,
