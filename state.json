@@ -279,7 +279,8 @@
   "https://www.investing.com/news/forex-news/brazilian-real-stays-weak-despite-global-risk-rebound-fiscal-worries-weigh-93CH-5046167",
   "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271",
   "https://www.investing.com/news/forex-news/indias-rupee-carry-trade-rbi-support-holds-but-risks-are-building-93CH-5046267",
-  "https://investinglive.com/forex/the-nvidia-reversal-creates-a-fresh-scramble-for-dollars/"
+  "https://investinglive.com/forex/the-nvidia-reversal-creates-a-fresh-scramble-for-dollars/",
+  "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -978,7 +979,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-24T01:35:18.232453+00:00",
+  "shock": "2026-11-24T01:40:18.915061+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1446,16 +1447,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09169,
-   "2026-11-24T01:34:00+00:00"
+   1.09178,
+   "2026-11-24T01:38:00+00:00"
   ],
   "USD/JPY": [
-   158.85233,
-   "2026-11-24T01:34:00+00:00"
+   158.8938,
+   "2026-11-24T01:38:00+00:00"
   ],
   "EUR/JPY": [
-   173.4175001377,
-   "2026-11-24T01:34:00+00:00"
+   173.477072964,
+   "2026-11-24T01:38:00+00:00"
   ]
  },
  "tg_offset": 585038439,
