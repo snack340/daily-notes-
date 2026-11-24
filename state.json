@@ -320,10 +320,18 @@
   "EUR|German Flash Manufacturing PMI|2026-11-23T08:30:00+00:00",
   "EUR|German Flash Services PMI|2026-11-23T08:30:00+00:00",
   "USD|Flash Manufacturing PMI|2026-11-23T14:45:00+00:00",
-  "USD|Flash Services PMI|2026-11-23T14:45:00+00:00"
+  "USD|Flash Services PMI|2026-11-23T14:45:00+00:00",
+  "USD|CB Consumer Confidence|2026-11-24T15:00:00+00:00"
  ],
  "alerted": [],
- "pending": [],
+ "pending": [
+  {
+   "title": "USD CB Consumer Confidence",
+   "t": "2026-11-24T15:00:00+00:00",
+   "high": false,
+   "fc": "92.4"
+  }
+ ],
  "recent": [
   "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
@@ -989,13 +997,13 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-24T14:25:17.929747+00:00",
+  "shock": "2026-11-24T14:30:18.088463+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-24T10:00:21.936069+00:00",
-   "critical"
+   "2026-11-24T14:30:17.971830+00:00",
+   "normal"
   ]
  ],
  "titles": [
@@ -1458,16 +1466,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09759,
-   "2026-11-24T14:23:00+00:00"
+   1.09713,
+   "2026-11-24T14:28:00+00:00"
   ],
   "USD/JPY": [
-   159.15361,
-   "2026-11-24T14:23:00+00:00"
+   159.21288,
+   "2026-11-24T14:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.68541079989998,
-   "2026-11-24T14:23:00+00:00"
+   174.6772270344,
+   "2026-11-24T14:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
