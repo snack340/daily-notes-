@@ -280,7 +280,8 @@
   "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271",
   "https://www.investing.com/news/forex-news/indias-rupee-carry-trade-rbi-support-holds-but-risks-are-building-93CH-5046267",
   "https://investinglive.com/forex/the-nvidia-reversal-creates-a-fresh-scramble-for-dollars/",
-  "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813"
+  "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813",
+  "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -979,7 +980,7 @@
  ],
  "last_heartbeat": "2026-11-23",
  "last_run": {
-  "shock": "2026-11-24T03:55:17.773557+00:00",
+  "shock": "2026-11-24T04:00:18.007851+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1025,7 +1026,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-24T03:40:18.983634+00:00",
+  "at": "2026-11-24T04:00:18.002561+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1447,16 +1448,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09122,
-   "2026-11-24T03:54:00+00:00"
+   1.09107,
+   "2026-11-24T03:58:00+00:00"
   ],
   "USD/JPY": [
-   158.96181,
-   "2026-11-24T03:54:00+00:00"
+   158.98039,
+   "2026-11-24T03:58:00+00:00"
   ],
   "EUR/JPY": [
-   173.46230630820003,
-   "2026-11-24T03:54:00+00:00"
+   173.4587341173,
+   "2026-11-24T03:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
