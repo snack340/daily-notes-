@@ -291,7 +291,8 @@
   "https://www.investing.com/news/forex-news/ubs-sees-usdjpy-at-158-through-2027-on-rate-differentials-93CH-5047434",
   "https://www.investing.com/news/forex-news/citi-sees-euro-undervalued-eyes-111-for-renewed-dollar-bets-93CH-5047471",
   "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261124~17928e5456.en.html",
-  "https://www.investing.com/news/forex-news/canadian-dollar-rebounds-from-19month-low-as-us-dollar-retreats-5048801"
+  "https://www.investing.com/news/forex-news/canadian-dollar-rebounds-from-19month-low-as-us-dollar-retreats-5048801",
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -327,7 +328,6 @@
  "alerted": [],
  "pending": [],
  "recent": [
-  "Investing.com: Japanese yen tests 160 again, drawing intervention threats",
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
   "Fed: Minutes of the Federal Open Market Committee, October 27-28, 2026",
@@ -336,7 +336,8 @@
   "ECB: Christine Lagarde: Acting in time",
   "ECB: Philip R. Lane: Climate change and monetary policy",
   "Investing.com: Dollar index technical outlook: rally extended but overbought signals flash caution",
-  "investingLive: USD/JPY flirts with danger again as the 160.00 mark puts Japan intervention risks back in focus"
+  "investingLive: USD/JPY flirts with danger again as the 160.00 mark puts Japan intervention risks back in focus",
+  "Fed: Minutes of the Board's discount rate meetings on October 19 and October 28, 2026"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -1020,12 +1021,12 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-24T19:00:18.067996+00:00",
+  "shock": "2026-11-24T19:05:20.071849+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-24T14:30:17.971830+00:00",
+   "2026-11-24T19:05:20.825363+00:00",
    "normal"
   ]
  ],
@@ -1063,11 +1064,12 @@
   "christine lagarde acting in time",
   "philip r lane climate change and monetary policy",
   "dollar index technical outlook rally extended but overbought signals flash caution",
-  "usd jpy flirts with danger again as the 160 00 mark puts japan intervention risks back in focus"
+  "usd jpy flirts with danger again as the 160 00 mark puts japan intervention risks back in focus",
+  "minutes of the board s discount rate meetings on october 19 and october 28 2026"
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-24T18:50:17.024523+00:00",
+  "at": "2026-11-24T19:05:20.042700+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1489,16 +1491,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09661,
-   "2026-11-24T18:58:00+00:00"
+   1.09675,
+   "2026-11-24T19:03:00+00:00"
   ],
   "USD/JPY": [
-   159.28704,
-   "2026-11-24T18:58:00+00:00"
+   159.27928,
+   "2026-11-24T19:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.6757609344,
-   "2026-11-24T18:58:00+00:00"
+   174.68955033999998,
+   "2026-11-24T19:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
