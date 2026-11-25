@@ -297,7 +297,8 @@
   "http://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2610.pdf",
   "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2609.pdf",
   "https://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2610.pdf",
-  "http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261120.htm"
+  "http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261120.htm",
+  "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261120.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1026,7 +1027,7 @@
  ],
  "last_heartbeat": "2026-11-24",
  "last_run": {
-  "shock": "2026-11-25T01:05:17.662889+00:00",
+  "shock": "2026-11-25T01:10:18.910979+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1074,7 +1075,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-25T00:50:18.134788+00:00",
+  "at": "2026-11-25T01:10:18.902990+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1504,16 +1505,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09613,
-   "2026-11-25T01:04:00+00:00"
+   1.0958,
+   "2026-11-25T01:08:00+00:00"
   ],
   "USD/JPY": [
-   159.23025,
-   "2026-11-25T01:04:00+00:00"
+   159.21155,
+   "2026-11-25T01:08:00+00:00"
   ],
   "EUR/JPY": [
-   174.53705393250002,
-   "2026-11-25T01:04:00+00:00"
+   174.46401649,
+   "2026-11-25T01:08:00+00:00"
   ]
  },
  "tg_offset": 585038439,
