@@ -305,7 +305,9 @@
   "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261120.xlsx",
   "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
   "https://www.investing.com/news/forex-news/sterling-today-pound-falls-as-risk-unwind-sends-funds-back-to-dollar-5050111",
-  "https://www.investing.com/news/forex-news/eurusd-may-rally-to-112-before-falling-to-105-bca-says-93CH-5050407"
+  "https://www.investing.com/news/forex-news/eurusd-may-rally-to-112-before-falling-to-105-bca-says-93CH-5050407",
+  "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+  "https://www.investing.com/news/forex-news/swiss-franc-safehaven-demand-and-usdchf-technical-outlook-93CH-5050525"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -336,10 +338,32 @@
   "EUR|German Flash Services PMI|2026-11-23T08:30:00+00:00",
   "USD|Flash Manufacturing PMI|2026-11-23T14:45:00+00:00",
   "USD|Flash Services PMI|2026-11-23T14:45:00+00:00",
-  "USD|CB Consumer Confidence|2026-11-24T15:00:00+00:00"
+  "USD|CB Consumer Confidence|2026-11-24T15:00:00+00:00",
+  "USD|Core PCE Price Index m/m|2026-11-25T13:30:00+00:00",
+  "USD|Prelim GDP q/q|2026-11-25T13:30:00+00:00",
+  "USD|Prelim GDP Price Index q/q|2026-11-25T13:30:00+00:00"
  ],
  "alerted": [],
- "pending": [],
+ "pending": [
+  {
+   "title": "USD Core PCE Price Index m/m",
+   "t": "2026-11-25T13:30:00+00:00",
+   "high": true,
+   "fc": "0.3%"
+  },
+  {
+   "title": "USD Prelim GDP q/q",
+   "t": "2026-11-25T13:30:00+00:00",
+   "high": true,
+   "fc": "3.5%"
+  },
+  {
+   "title": "USD Prelim GDP Price Index q/q",
+   "t": "2026-11-25T13:30:00+00:00",
+   "high": false,
+   "fc": "2.3%"
+  }
+ ],
  "recent": [
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
@@ -1034,12 +1058,12 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-25T12:25:20.398810+00:00",
+  "shock": "2026-11-25T12:30:17.453570+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-25T06:00:22.683104+00:00",
+   "2026-11-25T12:30:17.222996+00:00",
    "critical"
   ]
  ],
@@ -1512,16 +1536,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09538,
-   "2026-11-25T12:23:00+00:00"
+   1.09487,
+   "2026-11-25T12:28:00+00:00"
   ],
   "USD/JPY": [
-   159.26322,
-   "2026-11-25T12:23:00+00:00"
+   159.27969,
+   "2026-11-25T12:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.4537459236,
-   "2026-11-25T12:23:00+00:00"
+   174.39055419029998,
+   "2026-11-25T12:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
