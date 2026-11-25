@@ -299,7 +299,8 @@
   "https://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2610.pdf",
   "http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261120.htm",
   "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261120.htm",
-  "https://investinglive.com/forex/yen-and-euro-both-seen-gaining-on-the-dollar-by-end-2027-but-on-different-paths/"
+  "https://investinglive.com/forex/yen-and-euro-both-seen-gaining-on-the-dollar-by-end-2027-but-on-different-paths/",
+  "https://www.investing.com/news/forex-news/asia-fx-weakens-as-dollar-firms-on-tariff-risks-aussie-hits-11month-low-5049767"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1028,7 +1029,7 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-25T06:00:20.978800+00:00",
+  "shock": "2026-11-25T06:05:16.987405+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1506,16 +1507,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09428,
-   "2026-11-25T05:58:00+00:00"
+   1.09408,
+   "2026-11-25T06:03:00+00:00"
   ],
   "USD/JPY": [
-   159.42221,
-   "2026-11-25T05:58:00+00:00"
+   159.45991,
+   "2026-11-25T06:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.45253595879998,
-   "2026-11-25T05:58:00+00:00"
+   174.4618983328,
+   "2026-11-25T06:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
