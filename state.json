@@ -309,7 +309,8 @@
   "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
   "https://www.investing.com/news/forex-news/swiss-franc-safehaven-demand-and-usdchf-technical-outlook-93CH-5050525",
   "https://www.investing.com/news/forex-news/large-fx-option-expiries-for-ny-cut-on-wednesday-93CH-5050589",
-  "https://investinglive.com/forex/indian-rupee-strengthens-as-falling-oil-prices-ease-pressure-middle-east-escalation-and-recession-trade-remain-key-risks/"
+  "https://investinglive.com/forex/indian-rupee-strengthens-as-falling-oil-prices-ease-pressure-middle-east-escalation-and-recession-trade-remain-key-risks/",
+  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1131,7 +1132,7 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-25T17:30:18.333077+00:00",
+  "shock": "2026-11-25T17:35:17.573231+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1179,7 +1180,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-25T17:20:17.396768+00:00",
+  "at": "2026-11-25T17:35:17.556444+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1609,16 +1610,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09866,
-   "2026-11-25T17:28:00+00:00"
+   1.09835,
+   "2026-11-25T17:34:00+00:00"
   ],
   "USD/JPY": [
-   158.84109,
-   "2026-11-25T17:28:00+00:00"
+   158.9013,
+   "2026-11-25T17:34:00+00:00"
   ],
   "EUR/JPY": [
-   174.5123519394,
-   "2026-11-25T17:28:00+00:00"
+   174.52924285499998,
+   "2026-11-25T17:34:00+00:00"
   ]
  },
  "tg_offset": 585038439,
