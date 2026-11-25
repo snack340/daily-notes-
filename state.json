@@ -311,7 +311,9 @@
   "https://www.investing.com/news/forex-news/large-fx-option-expiries-for-ny-cut-on-wednesday-93CH-5050589",
   "https://investinglive.com/forex/indian-rupee-strengthens-as-falling-oil-prices-ease-pressure-middle-east-escalation-and-recession-trade-remain-key-risks/",
   "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html",
-  "https://www.investing.com/news/forex-news/us-to-cap-india-tariff-at-17-if-trade-deal-is-reached-ustr-says-5051317"
+  "https://www.investing.com/news/forex-news/us-to-cap-india-tariff-at-17-if-trade-deal-is-reached-ustr-says-5051317",
+  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
+  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1133,7 +1135,7 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-25T19:55:17.915943+00:00",
+  "shock": "2026-11-25T20:00:17.373278+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1611,16 +1613,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09819,
-   "2026-11-25T19:53:00+00:00"
+   1.09796,
+   "2026-11-25T19:58:00+00:00"
   ],
   "USD/JPY": [
-   159.18909,
-   "2026-11-25T19:53:00+00:00"
+   159.18596,
+   "2026-11-25T19:58:00+00:00"
   ],
   "EUR/JPY": [
-   174.81986674709998,
-   "2026-11-25T19:53:00+00:00"
+   174.7798166416,
+   "2026-11-25T19:58:00+00:00"
   ]
  },
  "tg_offset": 585038439,
