@@ -302,7 +302,9 @@
   "https://investinglive.com/forex/yen-and-euro-both-seen-gaining-on-the-dollar-by-end-2027-but-on-different-paths/",
   "https://www.investing.com/news/forex-news/asia-fx-weakens-as-dollar-firms-on-tariff-risks-aussie-hits-11month-low-5049767",
   "http://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261120.xlsx",
-  "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261120.xlsx"
+  "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261120.xlsx",
+  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+  "https://www.investing.com/news/forex-news/sterling-today-pound-falls-as-risk-unwind-sends-funds-back-to-dollar-5050111"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1031,7 +1033,7 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-25T10:00:19.994059+00:00",
+  "shock": "2026-11-25T10:05:20.500158+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1079,7 +1081,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-25T09:45:28.212689+00:00",
+  "at": "2026-11-25T10:05:20.483409+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1509,16 +1511,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09389,
-   "2026-11-25T09:58:00+00:00"
+   1.09406,
+   "2026-11-25T10:03:00+00:00"
   ],
   "USD/JPY": [
-   159.44714,
-   "2026-11-25T09:58:00+00:00"
+   159.4473,
+   "2026-11-25T10:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.4176319746,
-   "2026-11-25T09:58:00+00:00"
+   174.444913038,
+   "2026-11-25T10:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
