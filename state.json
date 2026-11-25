@@ -307,7 +307,8 @@
   "https://www.investing.com/news/forex-news/sterling-today-pound-falls-as-risk-unwind-sends-funds-back-to-dollar-5050111",
   "https://www.investing.com/news/forex-news/eurusd-may-rally-to-112-before-falling-to-105-bca-says-93CH-5050407",
   "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
-  "https://www.investing.com/news/forex-news/swiss-franc-safehaven-demand-and-usdchf-technical-outlook-93CH-5050525"
+  "https://www.investing.com/news/forex-news/swiss-franc-safehaven-demand-and-usdchf-technical-outlook-93CH-5050525",
+  "https://www.investing.com/news/forex-news/large-fx-option-expiries-for-ny-cut-on-wednesday-93CH-5050589"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1058,7 +1059,7 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-25T13:05:21.833165+00:00",
+  "shock": "2026-11-25T13:10:18.894775+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1536,16 +1537,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09422,
-   "2026-11-25T13:03:00+00:00"
+   1.09409,
+   "2026-11-25T13:08:00+00:00"
   ],
   "USD/JPY": [
-   159.33809,
-   "2026-11-25T13:03:00+00:00"
+   159.32718,
+   "2026-11-25T13:08:00+00:00"
   ],
   "EUR/JPY": [
-   174.3509248398,
-   "2026-11-25T13:03:00+00:00"
+   174.3182743662,
+   "2026-11-25T13:08:00+00:00"
   ]
  },
  "tg_offset": 585038439,
