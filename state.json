@@ -315,7 +315,8 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
   "http://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm",
-  "https://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm"
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm",
+  "https://www.investing.com/news/forex-news/asia-fx-won-muted-after-bok-hikes-rates-dollar-steady-5052015"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1137,7 +1138,7 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-26T05:00:20.058107+00:00",
+  "shock": "2026-11-26T05:05:17.334423+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1623,16 +1624,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09612,
-   "2026-11-26T04:58:00+00:00"
+   1.09607,
+   "2026-11-26T05:03:00+00:00"
   ],
   "USD/JPY": [
-   159.17103,
-   "2026-11-26T04:58:00+00:00"
+   159.17951,
+   "2026-11-26T05:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.4705494036,
-   "2026-11-26T04:58:00+00:00"
+   174.4718855257,
+   "2026-11-26T05:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
