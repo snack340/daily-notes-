@@ -314,7 +314,8 @@
   "https://www.investing.com/news/forex-news/us-to-cap-india-tariff-at-17-if-trade-deal-is-reached-ustr-says-5051317",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
-  "http://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm"
+  "http://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm",
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1136,7 +1137,7 @@
  ],
  "last_heartbeat": "2026-11-25",
  "last_run": {
-  "shock": "2026-11-26T03:40:16.847076+00:00",
+  "shock": "2026-11-26T03:45:17.430698+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1622,16 +1623,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09599,
-   "2026-11-26T03:38:00+00:00"
+   1.09592,
+   "2026-11-26T03:44:00+00:00"
   ],
   "USD/JPY": [
-   159.19,
-   "2026-11-26T03:38:00+00:00"
+   159.20197,
+   "2026-11-26T03:44:00+00:00"
   ],
   "EUR/JPY": [
-   174.4706481,
-   "2026-11-26T03:38:00+00:00"
+   174.47262296239998,
+   "2026-11-26T03:44:00+00:00"
   ]
  },
  "tg_offset": 585038439,
