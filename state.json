@@ -320,7 +320,8 @@
   "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104",
   "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-dollar-holds-range-on-us-holiday-5052307",
   "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html",
-  "https://investinglive.com/forex/eur-usd-might-be-bottoming-out-amid-peak-fed-hawkishness-and-dovish-repricing-risks/"
+  "https://investinglive.com/forex/eur-usd-might-be-bottoming-out-amid-peak-fed-hawkishness-and-dovish-repricing-risks/",
+  "https://www.investing.com/news/forex-news/loonie-weakens-amid-thanksgiving-holiday-lull-canadian-labor-market-data-5052729"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1142,7 +1143,7 @@
  ],
  "last_heartbeat": "2026-11-26",
  "last_run": {
-  "shock": "2026-11-26T22:05:17.701416+00:00",
+  "shock": "2026-11-26T22:10:17.767713+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1628,16 +1629,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09699,
-   "2026-11-26T22:04:00+00:00"
+   1.09694,
+   "2026-11-26T22:08:00+00:00"
   ],
   "USD/JPY": [
-   159.24075,
-   "2026-11-26T22:04:00+00:00"
+   159.27047,
+   "2026-11-26T22:08:00+00:00"
   ],
   "EUR/JPY": [
-   174.68551034249998,
-   "2026-11-26T22:04:00+00:00"
+   174.71014936179998,
+   "2026-11-26T22:08:00+00:00"
   ]
  },
  "tg_offset": 585038439,
