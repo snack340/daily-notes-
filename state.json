@@ -317,7 +317,8 @@
   "http://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm",
   "https://www.boj.or.jp/en/about/press/koen_2026/ko261126a.htm",
   "https://www.investing.com/news/forex-news/asia-fx-won-muted-after-bok-hikes-rates-dollar-steady-5052015",
-  "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
+  "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104",
+  "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-dollar-holds-range-on-us-holiday-5052307"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1139,7 +1140,7 @@
  ],
  "last_heartbeat": "2026-11-26",
  "last_run": {
-  "shock": "2026-11-26T09:45:19.027084+00:00",
+  "shock": "2026-11-26T09:50:18.915476+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1187,7 +1188,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-26T09:35:18.190918+00:00",
+  "at": "2026-11-26T09:50:18.900635+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1625,16 +1626,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09737,
-   "2026-11-26T09:43:00+00:00"
+   1.09738,
+   "2026-11-26T09:48:00+00:00"
   ],
   "USD/JPY": [
-   159.22717,
-   "2026-11-26T09:43:00+00:00"
+   159.20775,
+   "2026-11-26T09:48:00+00:00"
   ],
   "EUR/JPY": [
-   174.7311195429,
-   "2026-11-26T09:43:00+00:00"
+   174.711400695,
+   "2026-11-26T09:48:00+00:00"
   ]
  },
  "tg_offset": 585038439,
