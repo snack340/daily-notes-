@@ -327,7 +327,9 @@
   "https://www.boj.or.jp/en/about/press/koen_2026/ko261127a.htm",
   "https://www.investing.com/news/forex-news/asia-fx-weakens-as-high-oil-prices-weigh-dollar-edges-lower-in-holiday-trade-5052845",
   "http://www.boj.or.jp/en/research/wps_rev/rev_2026/rev26e14.htm",
-  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html"
+  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+  "https://www.investing.com/news/forex-news/goldman-sachs-sees-eurusd-recovering-toward-112-by-yearend-93CH-5053234",
+  "https://www.investing.com/news/forex-news/global-bonds-cap-strong-weekly-rally-after-aidriven-flight-to-safety-5053055"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1179,7 +1181,7 @@
  ],
  "last_heartbeat": "2026-11-27",
  "last_run": {
-  "shock": "2026-11-27T10:00:19.763635+00:00",
+  "shock": "2026-11-27T10:05:17.732121+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1667,16 +1669,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09625,
-   "2026-11-27T09:58:00+00:00"
+   1.09592,
+   "2026-11-27T10:03:00+00:00"
   ],
   "USD/JPY": [
-   159.51974,
-   "2026-11-27T09:58:00+00:00"
+   159.53012,
+   "2026-11-27T10:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.873514975,
-   "2026-11-27T09:58:00+00:00"
+   174.8322491104,
+   "2026-11-27T10:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
