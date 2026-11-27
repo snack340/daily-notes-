@@ -324,7 +324,8 @@
   "https://www.investing.com/news/forex-news/loonie-weakens-amid-thanksgiving-holiday-lull-canadian-labor-market-data-5052729",
   "http://www.boj.or.jp/en/about/press/koen_2026/ko261127a.htm",
   "https://investinglive.com/forex/ocbc-sees-the-indian-rupee-strengthening-to-92-10-per-dollar-by-end-2027-as-oil-relief-builds/",
-  "https://www.boj.or.jp/en/about/press/koen_2026/ko261127a.htm"
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261127a.htm",
+  "https://www.investing.com/news/forex-news/asia-fx-weakens-as-high-oil-prices-weigh-dollar-edges-lower-in-holiday-trade-5052845"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1176,7 +1177,7 @@
  ],
  "last_heartbeat": "2026-11-26",
  "last_run": {
-  "shock": "2026-11-27T04:25:16.449730+00:00",
+  "shock": "2026-11-27T04:30:16.125065+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1663,16 +1664,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09745,
-   "2026-11-27T04:23:00+00:00"
+   1.09739,
+   "2026-11-27T04:28:00+00:00"
   ],
   "USD/JPY": [
-   159.22543,
-   "2026-11-27T04:23:00+00:00"
+   159.23353,
+   "2026-11-27T04:28:00+00:00"
   ],
   "EUR/JPY": [
-   174.7419481535,
-   "2026-11-27T04:23:00+00:00"
+   174.7412834867,
+   "2026-11-27T04:28:00+00:00"
   ]
  },
  "tg_offset": 585038439,
