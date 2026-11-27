@@ -362,14 +362,7 @@
   "JPY|Tokyo Core CPI y/y|2026-11-26T23:30:00+00:00"
  ],
  "alerted": [],
- "pending": [
-  {
-   "title": "JPY Tokyo Core CPI y/y",
-   "t": "2026-11-26T23:30:00+00:00",
-   "high": false,
-   "fc": "3.0%"
-  }
- ],
+ "pending": [],
  "recent": [
   "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
@@ -1134,6 +1127,35 @@
     },
     "fc": "2.3%"
    }
+  ],
+  "JPY Tokyo Core CPI y/y": [
+   {
+    "date": "2026-11-26 23:30",
+    "pairs": {
+     "EUR/USD": {
+      "m5": 0.6,
+      "m30": -0.6,
+      "m60": -5.7,
+      "peak": -7.2,
+      "px": 1.09646
+     },
+     "USD/JPY": {
+      "m5": 1.5,
+      "m30": 2.2,
+      "m60": 9.6,
+      "peak": 11.0,
+      "px": 159.3575
+     },
+     "EUR/JPY": {
+      "m5": 2.6,
+      "m30": 1.4,
+      "m60": 1.4,
+      "peak": 5.2,
+      "px": 174.72912
+     }
+    },
+    "fc": "3.0%"
+   }
   ]
  },
  "last_shock": {
@@ -1151,7 +1173,7 @@
  ],
  "last_heartbeat": "2026-11-26",
  "last_run": {
-  "shock": "2026-11-27T00:30:16.947285+00:00",
+  "shock": "2026-11-27T00:35:17.612475+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1637,16 +1659,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09639,
-   "2026-11-27T00:28:00+00:00"
+   1.09653,
+   "2026-11-27T00:34:00+00:00"
   ],
   "USD/JPY": [
-   159.35801,
-   "2026-11-27T00:28:00+00:00"
+   159.35945,
+   "2026-11-27T00:34:00+00:00"
   ],
   "EUR/JPY": [
-   174.7185285839,
-   "2026-11-27T00:28:00+00:00"
+   174.7424177085,
+   "2026-11-27T00:34:00+00:00"
   ]
  },
  "tg_offset": 585038439,
