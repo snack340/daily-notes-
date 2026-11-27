@@ -326,7 +326,8 @@
   "https://investinglive.com/forex/ocbc-sees-the-indian-rupee-strengthening-to-92-10-per-dollar-by-end-2027-as-oil-relief-builds/",
   "https://www.boj.or.jp/en/about/press/koen_2026/ko261127a.htm",
   "https://www.investing.com/news/forex-news/asia-fx-weakens-as-high-oil-prices-weigh-dollar-edges-lower-in-holiday-trade-5052845",
-  "http://www.boj.or.jp/en/research/wps_rev/rev_2026/rev26e14.htm"
+  "http://www.boj.or.jp/en/research/wps_rev/rev_2026/rev26e14.htm",
+  "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -1178,7 +1179,7 @@
  ],
  "last_heartbeat": "2026-11-27",
  "last_run": {
-  "shock": "2026-11-27T09:00:18.321297+00:00",
+  "shock": "2026-11-27T09:05:19.580698+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
@@ -1228,7 +1229,7 @@
  ],
  "held": 0,
  "cal": {
-  "at": "2026-11-27T08:50:18.956905+00:00",
+  "at": "2026-11-27T09:05:19.561165+00:00",
   "raw": [
    {
     "title": "Bank Holiday",
@@ -1666,16 +1667,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.0966,
-   "2026-11-27T08:58:00+00:00"
+   1.09657,
+   "2026-11-27T09:03:00+00:00"
   ],
   "USD/JPY": [
-   159.44539,
-   "2026-11-27T08:58:00+00:00"
+   159.47201,
+   "2026-11-27T09:03:00+00:00"
   ],
   "EUR/JPY": [
-   174.847814674,
-   "2026-11-27T08:58:00+00:00"
+   174.87222200570002,
+   "2026-11-27T09:03:00+00:00"
   ]
  },
  "tg_offset": 585038439,
