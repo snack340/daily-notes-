@@ -321,7 +321,9 @@
   "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-dollar-holds-range-on-us-holiday-5052307",
   "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html",
   "https://investinglive.com/forex/eur-usd-might-be-bottoming-out-amid-peak-fed-hawkishness-and-dovish-repricing-risks/",
-  "https://www.investing.com/news/forex-news/loonie-weakens-amid-thanksgiving-holiday-lull-canadian-labor-market-data-5052729"
+  "https://www.investing.com/news/forex-news/loonie-weakens-amid-thanksgiving-holiday-lull-canadian-labor-market-data-5052729",
+  "http://www.boj.or.jp/en/about/press/koen_2026/ko261127a.htm",
+  "https://investinglive.com/forex/ocbc-sees-the-indian-rupee-strengthening-to-92-10-per-dollar-by-end-2027-as-oil-relief-builds/"
  ],
  "reminded": [
   "USD|30-y Bond Auction|2026-11-12T18:01:00+00:00",
@@ -364,7 +366,6 @@
  "alerted": [],
  "pending": [],
  "recent": [
-  "Investing.com: Asia FX: yen intervention in focus as rate hike bets put dollar near 19-mth high",
   "BoJ: Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
   "Fed: Minutes of the Federal Open Market Committee, October 27-28, 2026",
   "BoJ: Statement by Governor UEDA concerning the Bank's Semiannual Report on Currency and Monetary Control (Committee on Financial Affairs, Senate)",
@@ -373,7 +374,8 @@
   "ECB: Philip R. Lane: Climate change and monetary policy",
   "Investing.com: Dollar index technical outlook: rally extended but overbought signals flash caution",
   "investingLive: USD/JPY flirts with danger again as the 160.00 mark puts Japan intervention risks back in focus",
-  "Fed: Minutes of the Board's discount rate meetings on October 19 and October 28, 2026"
+  "Fed: Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+  "BoJ: Keynote speech by Executive Director KAMIYAMA at the IMF MCM-OAP Seminar in Tokyo (Digital Money and Payments: Transitioning Toward a New Paradigm)"
  ],
  "history": {
   "USD 30-y Bond Auction": [
@@ -1173,12 +1175,12 @@
  ],
  "last_heartbeat": "2026-11-26",
  "last_run": {
-  "shock": "2026-11-27T01:10:17.094747+00:00",
+  "shock": "2026-11-27T01:15:17.904944+00:00",
   "fail_commands": "2026-11-18T21:25:32.954590+00:00"
  },
  "sent_log": [
   [
-   "2026-11-26T23:00:23.966568+00:00",
+   "2026-11-27T01:15:18.981730+00:00",
    "normal"
   ]
  ],
@@ -1217,7 +1219,8 @@
   "philip r lane climate change and monetary policy",
   "dollar index technical outlook rally extended but overbought signals flash caution",
   "usd jpy flirts with danger again as the 160 00 mark puts japan intervention risks back in focus",
-  "minutes of the board s discount rate meetings on october 19 and october 28 2026"
+  "minutes of the board s discount rate meetings on october 19 and october 28 2026",
+  "keynote speech by executive director kamiyama at the imf mcm oap seminar in tokyo digital money and payments transitioning toward a new paradigm"
  ],
  "held": 0,
  "cal": {
@@ -1659,16 +1662,16 @@
  },
  "px": {
   "EUR/USD": [
-   1.09651,
-   "2026-11-27T01:08:00+00:00"
+   1.09655,
+   "2026-11-27T01:13:00+00:00"
   ],
   "USD/JPY": [
-   159.30412,
-   "2026-11-27T01:08:00+00:00"
+   159.31868,
+   "2026-11-27T01:13:00+00:00"
   ],
   "EUR/JPY": [
-   174.67856062120003,
-   "2026-11-27T01:08:00+00:00"
+   174.700898554,
+   "2026-11-27T01:13:00+00:00"
   ]
  },
  "tg_offset": 585038439,
